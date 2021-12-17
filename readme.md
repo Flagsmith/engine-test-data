@@ -20,8 +20,10 @@ Each JSON file should consist of a single object in the following format.
 To use this data, you will need to write a test case in the repository which contains the engine code and include 
 this repository as a submodule to get access to the json files.
 
-As an example, here are the steps to include the submodule and an example test in python. 
+To add the git submodule: 
 
-```
+```bash
 git submodule add git@github.com:Flagsmith/engine-test-data.git tests/engine_tests/engine-test-data
 ```
+
+An example of how to use the test data can be found in the flagsmith-flag-engine repository.  
