@@ -23,5 +23,5 @@ this repository as a submodule to get access to the json files.
 As an example, here are the steps to include the submodule and an example test in python. 
 
 ```
-# TODO
+git submodule add git@github.com:Flagsmith/engine-test-data.git tests/engine_tests/engine-test-data
 ```
