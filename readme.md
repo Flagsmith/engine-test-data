@@ -26,4 +26,5 @@ To add the git submodule:
 git submodule add git@github.com:Flagsmith/engine-test-data.git tests/engine_tests/engine-test-data
 ```
 
-An example of how to use the test data can be found in the flagsmith-flag-engine repository.  
+An example of how to use the test data can be found in the flagsmith-flag-engine repository 
+[here](https://github.com/Flagsmith/flagsmith-engine/blob/main/tests/engine_tests/test_engine.py).  
