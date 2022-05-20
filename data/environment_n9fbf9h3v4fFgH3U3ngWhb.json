@@ -102,83 +102,82 @@
             }
           ]
         },
-    {
-    "feature_states": [
         {
-        "feature_state_value": "segment_two_override_priority_0",
-        "multivariate_feature_state_values": [],
-        "django_id": 78978,
-        "feature": {
-            "id": 15058,
-            "type": "STANDARD",
-            "name": "string_feature"
+          "feature_states": [
+            {
+              "feature_state_value": "segment_two_override_priority_0",
+              "multivariate_feature_state_values": [],
+              "django_id": 78978,
+              "feature": {
+                "id": 15058,
+                "type": "STANDARD",
+                "name": "string_feature"
+              },
+              "enabled": true,
+              "priority": 0,
+              "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6"
+            }
+          ],
+          "id": 16,
+          "name": "segment_two",
+          "rules": [
+            {
+              "conditions": [],
+              "rules": [
+                {
+                  "conditions": [
+                    {
+                      "operator": "EQUAL",
+                      "property_": "two",
+                      "value": "2"
+                    }
+                  ],
+                  "rules": [],
+                  "type": "ANY"
+                }
+              ],
+              "type": "ALL"
+            }
+          ]
         },
-        "enabled": true,
-        "priority": 0,
-        "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6"
-    }
-    ],
-    "id": 16,
-    "name": "segment_two",
-    "rules": [
         {
-            "conditions": [],
-            "rules": [
+          "feature_states": [
+            {
+              "feature_state_value": "segment_three_override_priority_1",
+              "multivariate_feature_state_values": [],
+              "django_id": 78977,
+              "feature": {
+                "id": 15058,
+                "type": "STANDARD",
+                "name": "string_feature"
+              },
+              "enabled": true,
+              "priority": 1,
+              "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa7"
+            }
+          ],
+          "id": 17,
+          "name": "segment_three",
+          "rules": [
+            {
+              "conditions": [],
+              "rules": [
                 {
-                    "conditions": [
-                        {
-                            "operator": "EQUAL",
-                            "property_": "two",
-                            "value": "2"
-                        }
-                    ],
-                    "rules": [],
-                    "type": "ANY"
-                }
-            ],
-            "type": "ALL"
-        }
-    ]
-        },
-          {
-            "feature_states": [
+                  "conditions": [
                     {
-                        "feature_state_value": "segment_three_override_priority_1",
-                        "multivariate_feature_state_values": [],
-                        "django_id": 78977,
-                        "feature": {
-                            "id": 15058,
-                            "type": "STANDARD",
-                            "name": "string_feature"
-                        },
-                        "enabled": true,
-                        "priority": 1,
-                        "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa7"
+                      "operator": "EQUAL",
+                      "property_": "three",
+                      "value": "3"
                     }
-            ],
-            "id": 17,
-            "name": "segment_three",
-            "rules": [
-                {
-                "conditions": [],
-                "rules": [
-                    {
-                    "conditions": [
-                        {
-                        "operator": "EQUAL",
-                        "property_": "three",
-                        "value": "3"
-                    }
-                    ],
-                    "rules": [],
-                    "type": "ANY"
+                  ],
+                  "rules": [],
+                  "type": "ANY"
                 }
-            ],
-            "type": "ALL"
+              ],
+              "type": "ALL"
+            }
+          ]
         }
-    ]
-}
-
       ],
       "name": "Edge API Test Project",
       "id": 5359,
@@ -266,7 +265,7 @@
     "id": 12561
   },
   "identities_and_responses": [
-{
+    {
       "identity": {
         "identity_uuid": "10f435fb-66fa-4e5e-9787-75729a4e8373",
         "identifier": "identity_in_two_segments",
@@ -278,9 +277,9 @@
             "trait_key": "two",
             "trait_value": "2"
           },
-            {
-              "trait_key": "three",
-              "trait_value": "3"
+          {
+            "trait_key": "three",
+            "trait_value": "3"
           }
         ],
         "environment_api_key": "n9fbf9h3v4fFgH3U3ngWhb",
@@ -291,11 +290,11 @@
           {
             "trait_key": "two",
             "trait_value": "2"
-        },
-        {
+          },
+          {
             "trait_key": "three",
             "trait_value": "3"
-        }
+          }
         ],
         "flags": [
           {
@@ -385,7 +384,7 @@
           }
         ]
       }
-  },
+    },
     {
       "identity": {
         "identity_uuid": "10f435fb-66fa-4e5e-9787-75729a4e8372",
