@@ -101,7 +101,84 @@
               ]
             }
           ]
+        },
+    {
+    "feature_states": [
+        {
+        "feature_state_value": "segment_two_override_priority_0",
+        "multivariate_feature_state_values": [],
+        "django_id": 78978,
+        "feature": {
+            "id": 15058,
+            "type": "STANDARD",
+            "name": "string_feature"
+        },
+        "enabled": true,
+        "priority": 0,
+        "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6"
+    }
+    ],
+    "id": 16,
+    "name": "segment_two",
+    "rules": [
+        {
+            "conditions": [],
+            "rules": [
+                {
+                    "conditions": [
+                        {
+                            "operator": "EQUAL",
+                            "property_": "two",
+                            "value": "2"
+                        }
+                    ],
+                    "rules": [],
+                    "type": "ANY"
+                }
+            ],
+            "type": "ALL"
         }
+    ]
+        },
+          {
+            "feature_states": [
+                    {
+                        "feature_state_value": "segment_three_override_priority_1",
+                        "multivariate_feature_state_values": [],
+                        "django_id": 78977,
+                        "feature": {
+                            "id": 15058,
+                            "type": "STANDARD",
+                            "name": "string_feature"
+                        },
+                        "enabled": true,
+                        "priority": 1,
+                        "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa7"
+                    }
+            ],
+            "id": 17,
+            "name": "segment_three",
+            "rules": [
+                {
+                "conditions": [],
+                "rules": [
+                    {
+                    "conditions": [
+                        {
+                        "operator": "EQUAL",
+                        "property_": "three",
+                        "value": "3"
+                    }
+                    ],
+                    "rules": [],
+                    "type": "ANY"
+                }
+            ],
+            "type": "ALL"
+        }
+    ]
+}
+
       ],
       "name": "Edge API Test Project",
       "id": 5359,
@@ -189,6 +266,126 @@
     "id": 12561
   },
   "identities_and_responses": [
+{
+      "identity": {
+        "identity_uuid": "10f435fb-66fa-4e5e-9787-75729a4e8373",
+        "identifier": "identity_in_two_segments",
+        "created_date": "2021-12-15T14:40:00.880997",
+        "composite_key": "n9fbf9h3v4fFgH3U3ngWhb_identity_in_two_segments",
+        "identity_features": [],
+        "identity_traits": [
+          {
+            "trait_key": "two",
+            "trait_value": "2"
+          },
+            {
+              "trait_key": "three",
+              "trait_value": "3"
+          }
+        ],
+        "environment_api_key": "n9fbf9h3v4fFgH3U3ngWhb",
+        "django_id": 32102998
+      },
+      "response": {
+        "traits": [
+          {
+            "trait_key": "two",
+            "trait_value": "2"
+        },
+        {
+            "trait_key": "three",
+            "trait_value": "3"
+        }
+        ],
+        "flags": [
+          {
+            "id": 78982,
+            "feature": {
+              "id": 15060,
+              "name": "basic_flag",
+              "created_date": "2021-11-29T17:16:25.449058Z",
+              "description": null,
+              "initial_value": null,
+              "default_enabled": false,
+              "type": "STANDARD"
+            },
+            "feature_state_value": null,
+            "enabled": false,
+            "environment": 12561,
+            "identity": null,
+            "feature_segment": null
+          },
+          {
+            "id": 78984,
+            "feature": {
+              "id": 15061,
+              "name": "float_feature",
+              "created_date": "2021-11-29T17:16:43.961385Z",
+              "description": null,
+              "initial_value": "12.34",
+              "default_enabled": false,
+              "type": "STANDARD"
+            },
+            "feature_state_value": "12.34",
+            "enabled": true,
+            "environment": 12561,
+            "identity": null,
+            "feature_segment": null
+          },
+          {
+            "id": 78980,
+            "feature": {
+              "id": 15059,
+              "name": "integer_feature",
+              "created_date": "2021-11-29T17:16:11.288134Z",
+              "description": null,
+              "initial_value": "1234",
+              "default_enabled": true,
+              "type": "STANDARD"
+            },
+            "feature_state_value": 1234,
+            "enabled": true,
+            "environment": 12561,
+            "identity": null,
+            "feature_segment": null
+          },
+          {
+            "id": 78986,
+            "feature": {
+              "id": 15062,
+              "name": "mv_feature",
+              "created_date": "2021-11-29T17:17:23.645334Z",
+              "description": null,
+              "initial_value": "foo",
+              "default_enabled": false,
+              "type": "MULTIVARIATE"
+            },
+            "feature_state_value": "baz",
+            "enabled": true,
+            "environment": 12561,
+            "identity": null,
+            "feature_segment": null
+          },
+          {
+            "id": 78978,
+            "feature": {
+              "id": 15058,
+              "name": "string_feature",
+              "created_date": "2021-11-29T17:15:51.694223Z",
+              "description": null,
+              "initial_value": "foo",
+              "default_enabled": true,
+              "type": "STANDARD"
+            },
+            "feature_state_value": "segment_two_override_priority_0",
+            "enabled": true,
+            "environment": 12561,
+            "identity": null,
+            "feature_segment": null
+          }
+        ]
+      }
+  },
     {
       "identity": {
         "identity_uuid": "10f435fb-66fa-4e5e-9787-75729a4e8372",
