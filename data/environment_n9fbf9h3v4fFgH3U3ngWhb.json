@@ -114,7 +114,7 @@
                 "name": "string_feature"
               },
               "enabled": true,
-              "priority": 0,
+              "feature_segment": { "priority": 0 },
               "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6"
             }
           ],
@@ -152,7 +152,9 @@
                 "name": "string_feature"
               },
               "enabled": true,
-              "priority": 1,
+              "feature_segment": {
+                "priority": 1
+              },
               "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa7"
             }
           ],
