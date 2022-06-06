@@ -313,8 +313,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -330,8 +329,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -347,8 +345,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -364,8 +361,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -381,8 +377,7 @@
             "feature_state_value": "segment_two_override_priority_0",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -435,8 +430,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -452,8 +446,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -469,8 +462,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -486,8 +478,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -503,8 +494,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -557,8 +547,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -574,8 +563,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -591,8 +579,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -608,8 +595,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -625,8 +611,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -679,8 +664,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -696,8 +680,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -713,8 +696,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -730,8 +712,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -747,8 +728,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -801,8 +781,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -818,8 +797,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -835,8 +813,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -852,8 +829,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -869,8 +845,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -923,8 +898,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -940,8 +914,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -957,8 +930,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -974,8 +946,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -991,8 +962,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1045,8 +1015,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1062,8 +1031,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1079,8 +1047,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1096,8 +1063,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1113,8 +1079,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1167,8 +1132,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1184,8 +1148,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1201,8 +1164,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1218,8 +1180,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1235,8 +1196,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1289,8 +1249,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1306,8 +1265,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1323,8 +1281,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1340,8 +1297,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1357,8 +1313,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1411,8 +1366,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1428,8 +1382,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1445,8 +1398,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1462,8 +1414,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1479,8 +1430,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1533,8 +1483,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1550,8 +1499,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1567,8 +1515,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1584,8 +1531,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1601,8 +1547,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1655,8 +1600,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1672,8 +1616,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1689,8 +1632,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1706,8 +1648,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1723,8 +1664,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1777,8 +1717,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1794,8 +1733,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1811,8 +1749,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1828,8 +1765,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1845,8 +1781,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -1899,8 +1834,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -1916,8 +1850,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -1933,8 +1866,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -1950,8 +1882,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -1967,8 +1898,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2021,8 +1951,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2038,8 +1967,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2055,8 +1983,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2072,8 +1999,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 81027,
@@ -2089,8 +2015,7 @@
             "feature_state_value": "segment_override",
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": 9893
+            "identity": null
           }
         ]
       }
@@ -2143,8 +2068,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2160,8 +2084,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2177,8 +2100,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2194,8 +2116,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2211,8 +2132,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2265,8 +2185,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2282,8 +2201,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2299,8 +2217,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2316,8 +2233,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2333,8 +2249,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2387,8 +2302,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2404,8 +2318,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2421,8 +2334,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2438,8 +2350,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2455,8 +2366,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2509,8 +2419,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2526,8 +2435,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2543,8 +2451,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2560,8 +2467,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2577,8 +2483,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2631,8 +2536,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2648,8 +2552,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2665,8 +2568,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2682,8 +2584,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2699,8 +2600,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2753,8 +2653,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2770,8 +2669,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2787,8 +2685,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2804,8 +2701,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2821,8 +2717,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2875,8 +2770,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -2892,8 +2786,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -2909,8 +2802,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -2926,8 +2818,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -2943,8 +2834,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -2997,8 +2887,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3014,8 +2903,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3031,8 +2919,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3048,8 +2935,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3065,8 +2951,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3119,8 +3004,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3136,8 +3020,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3153,8 +3036,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3170,8 +3052,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3187,8 +3068,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3241,8 +3121,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3258,8 +3137,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3275,8 +3153,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3292,8 +3169,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3309,8 +3185,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3363,8 +3238,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3380,8 +3254,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3397,8 +3270,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3414,8 +3286,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3431,8 +3302,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3485,8 +3355,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3502,8 +3371,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3519,8 +3387,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3536,8 +3403,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3553,8 +3419,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3607,8 +3472,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3624,8 +3488,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3641,8 +3504,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3658,8 +3520,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3675,8 +3536,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3729,8 +3589,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3746,8 +3605,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3763,8 +3621,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3780,8 +3637,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -3797,8 +3653,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -3851,8 +3706,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3868,8 +3722,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -3885,8 +3738,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -3902,8 +3754,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 81027,
@@ -3919,8 +3770,7 @@
             "feature_state_value": "segment_override",
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": 9893
+            "identity": null
           }
         ]
       }
@@ -3973,8 +3823,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -3990,8 +3839,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4007,8 +3855,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4024,8 +3871,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4041,8 +3887,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4095,8 +3940,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4112,8 +3956,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4129,8 +3972,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4146,8 +3988,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4163,8 +4004,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4217,8 +4057,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4234,8 +4073,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4251,8 +4089,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4268,8 +4105,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4285,8 +4121,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4339,8 +4174,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4356,8 +4190,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4373,8 +4206,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4390,8 +4222,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4407,8 +4238,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4461,8 +4291,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4478,8 +4307,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4495,8 +4323,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4512,8 +4339,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4529,8 +4355,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4583,8 +4408,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4600,8 +4424,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4617,8 +4440,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4634,8 +4456,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4651,8 +4472,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4705,8 +4525,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4722,8 +4541,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4739,8 +4557,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4756,8 +4573,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4773,8 +4589,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4827,8 +4642,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4844,8 +4658,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4861,8 +4674,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -4878,8 +4690,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -4895,8 +4706,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -4949,8 +4759,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -4966,8 +4775,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -4983,8 +4791,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5000,8 +4807,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5017,8 +4823,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5071,8 +4876,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5088,8 +4892,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5105,8 +4908,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5122,8 +4924,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5139,8 +4940,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5193,8 +4993,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5210,8 +5009,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5227,8 +5025,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5244,8 +5041,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5261,8 +5057,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5315,8 +5110,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5332,8 +5126,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5349,8 +5142,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5366,8 +5158,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5383,8 +5174,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5437,8 +5227,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5454,8 +5243,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5471,8 +5259,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5488,8 +5275,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5505,8 +5291,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5559,8 +5344,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5576,8 +5360,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5593,8 +5376,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5610,8 +5392,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5627,8 +5408,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5681,8 +5461,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5698,8 +5477,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5715,8 +5493,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5732,8 +5509,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5749,8 +5525,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5803,8 +5578,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5820,8 +5594,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5837,8 +5610,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5854,8 +5626,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5871,8 +5642,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -5925,8 +5695,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -5942,8 +5711,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -5959,8 +5727,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -5976,8 +5743,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -5993,8 +5759,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6047,8 +5812,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6064,8 +5828,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6081,8 +5844,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6098,8 +5860,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6115,8 +5876,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6169,8 +5929,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6186,8 +5945,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6203,8 +5961,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6220,8 +5977,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6237,8 +5993,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6291,8 +6046,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6308,8 +6062,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6325,8 +6078,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6342,8 +6094,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6359,8 +6110,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6413,8 +6163,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6430,8 +6179,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6447,8 +6195,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6464,8 +6211,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6481,8 +6227,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6535,8 +6280,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6552,8 +6296,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6569,8 +6312,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6586,8 +6328,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6603,8 +6344,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6657,8 +6397,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6674,8 +6413,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6691,8 +6429,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6708,8 +6445,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6725,8 +6461,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6779,8 +6514,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6796,8 +6530,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6813,8 +6546,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6830,8 +6562,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6847,8 +6578,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -6901,8 +6631,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -6918,8 +6647,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -6935,8 +6663,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -6952,8 +6679,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -6969,8 +6695,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7023,8 +6748,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7040,8 +6764,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7057,8 +6780,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7074,8 +6796,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7091,8 +6812,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7145,8 +6865,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7162,8 +6881,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7179,8 +6897,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7196,8 +6913,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7213,8 +6929,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7267,8 +6982,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7284,8 +6998,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7301,8 +7014,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7318,8 +7030,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7335,8 +7046,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7389,8 +7099,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7406,8 +7115,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7423,8 +7131,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7440,8 +7147,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7457,8 +7163,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7511,8 +7216,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7528,8 +7232,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7545,8 +7248,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7562,8 +7264,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7579,8 +7280,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7633,8 +7333,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7650,8 +7349,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7667,8 +7365,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7684,8 +7381,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7701,8 +7397,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7755,8 +7450,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7772,8 +7466,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7789,8 +7482,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7806,8 +7498,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7823,8 +7514,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7877,8 +7567,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -7894,8 +7583,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -7911,8 +7599,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -7928,8 +7615,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -7945,8 +7631,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -7999,8 +7684,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8016,8 +7700,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8033,8 +7716,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8050,8 +7732,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8067,8 +7748,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8121,8 +7801,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8138,8 +7817,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8155,8 +7833,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8172,8 +7849,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8189,8 +7865,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8243,8 +7918,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8260,8 +7934,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8277,8 +7950,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8294,8 +7966,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8311,8 +7982,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8365,8 +8035,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8382,8 +8051,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8399,8 +8067,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8416,8 +8083,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8433,8 +8099,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8487,8 +8152,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8504,8 +8168,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8521,8 +8184,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8538,8 +8200,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8555,8 +8216,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8609,8 +8269,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8626,8 +8285,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8643,8 +8301,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8660,8 +8317,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8677,8 +8333,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8731,8 +8386,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8748,8 +8402,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8765,8 +8418,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8782,8 +8434,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8799,8 +8450,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8853,8 +8503,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8870,8 +8519,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -8887,8 +8535,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -8904,8 +8551,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -8921,8 +8567,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -8975,8 +8620,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -8992,8 +8636,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9009,8 +8652,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9026,8 +8668,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9043,8 +8684,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9097,8 +8737,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9114,8 +8753,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9131,8 +8769,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9148,8 +8785,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9165,8 +8801,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9219,8 +8854,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9236,8 +8870,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9253,8 +8886,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9270,8 +8902,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9287,8 +8918,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9341,8 +8971,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9358,8 +8987,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9375,8 +9003,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9392,8 +9019,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9409,8 +9035,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9463,8 +9088,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9480,8 +9104,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9497,8 +9120,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9514,8 +9136,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9531,8 +9152,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9585,8 +9205,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9602,8 +9221,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9619,8 +9237,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9636,8 +9253,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9653,8 +9269,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9707,8 +9322,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9724,8 +9338,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9741,8 +9354,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9758,8 +9370,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9775,8 +9386,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9829,8 +9439,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9846,8 +9455,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9863,8 +9471,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -9880,8 +9487,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -9897,8 +9503,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -9951,8 +9556,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -9968,8 +9572,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -9985,8 +9588,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10002,8 +9604,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10019,8 +9620,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10073,8 +9673,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10090,8 +9689,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10107,8 +9705,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10124,8 +9721,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10141,8 +9737,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10195,8 +9790,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10212,8 +9806,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10229,8 +9822,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10246,8 +9838,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 81027,
@@ -10263,8 +9854,7 @@
             "feature_state_value": "segment_override",
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": 9893
+            "identity": null
           }
         ]
       }
@@ -10317,8 +9907,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10334,8 +9923,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10351,8 +9939,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10368,8 +9955,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10385,8 +9971,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10439,8 +10024,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10456,8 +10040,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10473,8 +10056,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10490,8 +10072,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10507,8 +10088,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10561,8 +10141,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10578,8 +10157,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10595,8 +10173,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10612,8 +10189,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10629,8 +10205,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10683,8 +10258,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10700,8 +10274,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10717,8 +10290,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10734,8 +10306,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10751,8 +10322,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10805,8 +10375,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10822,8 +10391,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10839,8 +10407,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10856,8 +10423,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10873,8 +10439,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -10927,8 +10492,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -10944,8 +10508,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -10961,8 +10524,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -10978,8 +10540,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -10995,8 +10556,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11049,8 +10609,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11066,8 +10625,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11083,8 +10641,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11100,8 +10657,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11117,8 +10673,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11171,8 +10726,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11188,8 +10742,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11205,8 +10758,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11222,8 +10774,7 @@
             "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11239,8 +10790,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11293,8 +10843,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11310,8 +10859,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11327,8 +10875,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11344,8 +10891,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11361,8 +10907,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11415,8 +10960,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11432,8 +10976,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11449,8 +10992,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11466,8 +11008,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11483,8 +11024,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11537,8 +11077,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11554,8 +11093,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11571,8 +11109,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11588,8 +11125,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11605,8 +11141,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11659,8 +11194,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11676,8 +11210,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11693,8 +11226,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11710,8 +11242,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11727,8 +11258,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11781,8 +11311,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11798,8 +11327,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11815,8 +11343,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11832,8 +11359,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11849,8 +11375,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -11903,8 +11428,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -11920,8 +11444,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -11937,8 +11460,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -11954,8 +11476,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -11971,8 +11492,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -12025,8 +11545,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -12042,8 +11561,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -12059,8 +11577,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -12076,8 +11593,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -12093,8 +11609,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -12147,8 +11662,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -12164,8 +11678,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -12181,8 +11694,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -12198,8 +11710,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -12215,8 +11726,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -12269,8 +11779,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -12286,8 +11795,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -12303,8 +11811,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -12320,8 +11827,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -12337,8 +11843,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -12391,8 +11896,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -12408,8 +11912,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -12425,8 +11928,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -12442,8 +11944,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -12459,8 +11960,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
@@ -12513,8 +12013,7 @@
             "feature_state_value": null,
             "enabled": false,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78984,
@@ -12530,8 +12029,7 @@
             "feature_state_value": "12.34",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78980,
@@ -12547,8 +12045,7 @@
             "feature_state_value": 1234,
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78986,
@@ -12564,8 +12061,7 @@
             "feature_state_value": "bar",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           },
           {
             "id": 78978,
@@ -12581,8 +12077,7 @@
             "feature_state_value": "foo",
             "enabled": true,
             "environment": 12561,
-            "identity": null,
-            "feature_segment": null
+            "identity": null
           }
         ]
       }
