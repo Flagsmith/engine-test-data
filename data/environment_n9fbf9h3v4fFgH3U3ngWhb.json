@@ -263,6 +263,21 @@
               "value": "bar"
             },
             "percentage_allocation": 30
+          },
+          {
+            "id": 3405,
+            "multivariate_feature_option": {
+              "value": 1
+            },
+            "percentage_allocation": 0
+          },
+
+          {
+            "id": 3406,
+            "multivariate_feature_option": {
+              "value": true
+            },
+            "percentage_allocation": 0
           }
         ],
         "django_id": 78986,
