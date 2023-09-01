@@ -9,6 +9,7 @@
             {
               "feature_state_value": "segment_override",
               "multivariate_feature_state_values": [],
+              "feature_segment": null,
               "django_id": 81027,
               "feature": {
                 "id": 15058,
