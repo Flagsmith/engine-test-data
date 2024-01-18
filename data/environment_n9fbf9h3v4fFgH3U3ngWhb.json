@@ -319,6 +319,39 @@
   "identities_and_responses": [
     {
       "identity": {
+        "identity_uuid": "65bc5ac6-5859-4cfe-97e6-d5ec2e80c1fb",
+        "identifier": "overridden_identity",
+        "created_date": "2024-01-18T17:42:19.797964",
+        "composite_key": "n9fbf9h3v4fFgH3U3ngWhb_identity_overridden_identity",
+        "identity_features": [],
+        "identity_traits": [],
+        "environment_api_key": "n9fbf9h3v4fFgH3U3ngWhb",
+        "django_id": 34123026
+      },
+      "response": {
+        "traits": [],
+        "flags": [
+          {
+            "id": 78978,
+            "feature": {
+              "id": 15058,
+              "name": "string_feature",
+              "created_date": "2021-11-29T17:15:51.694223Z",
+              "description": null,
+              "initial_value": null,
+              "default_enabled": false,
+              "type": "STANDARD"
+            },
+            "feature_state_value": "overridden",
+            "enabled": false,
+            "environment": 12561,
+            "identity": null
+          }
+        ]
+      }
+    },
+    {
+      "identity": {
         "identity_uuid": "10f435fb-66fa-4e5e-9787-75729a4e8373",
         "identifier": "identity_in_two_segments",
         "created_date": "2021-12-15T14:40:00.880997",
