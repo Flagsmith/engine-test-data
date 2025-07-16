@@ -218,7 +218,7 @@
                     {
                       "operator": "IN",
                       "property": "$.identity.identifier",
-                      "value": "1bde8445-ca19-4bda-a9d5-3543a800fc0f",
+                      "value": "1bde8445-ca19-4bda-a9d5-3543a800fc0f"
                     }
                   ]
                 },
