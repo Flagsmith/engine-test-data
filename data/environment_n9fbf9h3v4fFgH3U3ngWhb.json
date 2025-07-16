@@ -217,7 +217,7 @@
                   "conditions": [
                     {
                       "operator": "IN",
-                      "property": "$.identity.identifier",
+                      "property_": "$.identity.identifier",
                       "value": "1bde8445-ca19-4bda-a9d5-3543a800fc0f"
                     }
                   ]
@@ -228,7 +228,7 @@
                   "conditions": [
                     {
                       "operator": "EQUAL",
-                      "property": "$.environment.name",
+                      "property_": "$.environment.name",
                       "value": "Production"
                     }
                   ]
