@@ -12237,7 +12237,7 @@
               "default_enabled": false,
               "type": "MULTIVARIATE"
             },
-            "feature_state_value": "bar",
+            "feature_state_value": "baz",
             "enabled": true,
             "environment": 12561,
             "identity": null
