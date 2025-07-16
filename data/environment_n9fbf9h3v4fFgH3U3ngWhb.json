@@ -114,7 +114,9 @@
                 "name": "string_feature"
               },
               "enabled": true,
-              "feature_segment": { "priority": 0 },
+              "feature_segment": {
+                "priority": 0
+              },
               "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6"
             }
           ],
@@ -189,6 +191,60 @@
               "type": "ALL"
             }
           ]
+        },
+        {
+          "feature_states": [
+            {
+              "feature_state_value": "context_values",
+              "multivariate_feature_state_values": [],
+              "django_id": 81027,
+              "feature": {
+                "id": 15058,
+                "type": "STANDARD",
+                "name": "string_feature"
+              },
+              "enabled": true
+            }
+          ],
+          "id": 381942,
+          "rules": [
+            {
+              "type": "ALL",
+              "rules": [
+                {
+                  "type": "ANY",
+                  "rules": [],
+                  "conditions": [
+                    {
+                      "operator": "IN",
+                      "property": "$.identity.identifier",
+                      "value": "1bde8445-ca19-4bda-a9d5-3543a800fc0f",
+                    }
+                  ]
+                },
+                {
+                  "type": "ANY",
+                  "rules": [],
+                  "conditions": [
+                    {
+                      "operator": "EQUAL",
+                      "property": "$.environment.name",
+                      "value": "Production"
+                    }
+                  ]
+                }
+              ],
+              "conditions": []
+            }
+          ],
+          "deleted_at": null,
+          "uuid": "e03dff51-dfbe-4dfb-a443-2c93bc0f0da9",
+          "name": "context_values",
+          "description": "Testing Context values.",
+          "version": 1,
+          "created_at": "2025-07-16T07:58:09.381757Z",
+          "updated_at": "2025-07-16T07:58:09.391444Z",
+          "project": 5359
         }
       ],
       "name": "Edge API Test Project",
@@ -272,7 +328,6 @@
             },
             "percentage_allocation": 0
           },
-
           {
             "id": 3406,
             "multivariate_feature_option": {
@@ -290,6 +345,7 @@
         "enabled": true
       }
     ],
+    "name": "Production",
     "id": 12561
   },
   "identities_and_responses": [
@@ -12101,6 +12157,103 @@
               "type": "STANDARD"
             },
             "feature_state_value": "foo",
+            "enabled": true,
+            "environment": 12561,
+            "identity": null
+          }
+        ]
+      }
+    },
+    {
+      "identity": {
+        "identity_uuid": "c2f7da4d-9049-41c0-a900-f09dfc7b8532",
+        "identifier": "1bde8445-ca19-4bda-a9d5-3543a800fc0f",
+        "created_date": "2021-12-15T14:40:00.881614",
+        "composite_key": "n9fbf9h3v4fFgH3U3ngWhb_1bde8445-ca19-4bda-a9d5-3543a800fc0f",
+        "identity_features": [],
+        "identity_traits": [],
+        "environment_api_key": "n9fbf9h3v4fFgH3U3ngWhb",
+        "django_id": 32227281
+      },
+      "response": {
+        "traits": [],
+        "flags": [
+          {
+            "id": 78982,
+            "feature": {
+              "id": 15060,
+              "name": "basic_flag",
+              "created_date": "2021-11-29T17:16:25.449058Z",
+              "description": null,
+              "initial_value": null,
+              "default_enabled": false,
+              "type": "STANDARD"
+            },
+            "feature_state_value": null,
+            "enabled": false,
+            "environment": 12561,
+            "identity": null
+          },
+          {
+            "id": 78984,
+            "feature": {
+              "id": 15061,
+              "name": "float_feature",
+              "created_date": "2021-11-29T17:16:43.961385Z",
+              "description": null,
+              "initial_value": "12.34",
+              "default_enabled": false,
+              "type": "STANDARD"
+            },
+            "feature_state_value": "12.34",
+            "enabled": true,
+            "environment": 12561,
+            "identity": null
+          },
+          {
+            "id": 78980,
+            "feature": {
+              "id": 15059,
+              "name": "integer_feature",
+              "created_date": "2021-11-29T17:16:11.288134Z",
+              "description": null,
+              "initial_value": "1234",
+              "default_enabled": true,
+              "type": "STANDARD"
+            },
+            "feature_state_value": 1234,
+            "enabled": true,
+            "environment": 12561,
+            "identity": null
+          },
+          {
+            "id": 78986,
+            "feature": {
+              "id": 15062,
+              "name": "mv_feature",
+              "created_date": "2021-11-29T17:17:23.645334Z",
+              "description": null,
+              "initial_value": "foo",
+              "default_enabled": false,
+              "type": "MULTIVARIATE"
+            },
+            "feature_state_value": "bar",
+            "enabled": true,
+            "environment": 12561,
+            "identity": null
+          },
+          {
+            "id": 78978,
+            "feature": {
+              "id": 15058,
+              "name": "string_feature",
+              "created_date": "2021-11-29T17:15:51.694223Z",
+              "description": null,
+              "initial_value": "foo",
+              "default_enabled": true,
+              "type": "STANDARD"
+            },
+            "feature_state_value": "context_values",
             "enabled": true,
             "environment": 12561,
             "identity": null
