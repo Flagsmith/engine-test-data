@@ -212,20 +212,14 @@
               "type": "ALL",
               "rules": [
                 {
-                  "type": "ANY",
+                  "type": "ALL",
                   "rules": [],
                   "conditions": [
                     {
                       "operator": "IN",
                       "property_": "$.identity.identifier",
                       "value": "1bde8445-ca19-4bda-a9d5-3543a800fc0f"
-                    }
-                  ]
-                },
-                {
-                  "type": "ANY",
-                  "rules": [],
-                  "conditions": [
+                    },
                     {
                       "operator": "EQUAL",
                       "property_": "$.environment.name",
