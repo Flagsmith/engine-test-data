@@ -252,7 +252,6 @@
       }
     },
     "api_key": "n9fbf9h3v4fFgH3U3ngWhb",
-    "name": "Test Environment",
     "feature_states": [
       {
         "feature_state_value": "foo",
@@ -340,7 +339,7 @@
         "enabled": true
       }
     ],
-    "name": "Production",
+    "name": "Test environment",
     "id": 12561
   },
   "identities_and_responses": [
