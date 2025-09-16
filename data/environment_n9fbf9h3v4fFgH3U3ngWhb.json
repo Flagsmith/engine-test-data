@@ -223,7 +223,7 @@
                     {
                       "operator": "EQUAL",
                       "property_": "$.environment.name",
-                      "value": "Production"
+                      "value": "Test Environment"
                     }
                   ]
                 }
@@ -339,7 +339,7 @@
         "enabled": true
       }
     ],
-    "name": "Test environment",
+    "name": "Test Environment",
     "id": 12561
   },
   "identities_and_responses": [
