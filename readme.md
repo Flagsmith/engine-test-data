@@ -5,17 +5,20 @@ written in a given language is correct.
 
 Each JSON file should consist of a single object in the following format.
 
-```json
+```jsonc
 {
-  "environment": {...},  // the environment document as found in DynamoDB
-  "identities_and_responses": [
+  "environment": {/* The environment document as found in DynamoDB */},
+  "test_cases": [
     {
-      "identity": {...},  // the identity as found in DynamoDB,
-      "response": {...},  // the response that was obtained from the current API
+      "context": {/* The Evaluation Context (see note below) */},
+      "response": {/* The expected response */},
     }
   ]
 }
 ```
+
+> [!NOTE]
+> **Evaluation Context** is defined by [this specification](https://github.com/Flagsmith/flagsmith/blob/main/sdk/evaluation-context.json).
 
 To use this data, you will need to write a test case in the repository which contains the engine code and include 
 this repository as a submodule to get access to the json files.
