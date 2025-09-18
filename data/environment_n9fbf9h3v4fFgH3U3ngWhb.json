@@ -422,7 +422,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -460,7 +460,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -793,7 +793,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -831,7 +831,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -1166,7 +1166,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -1204,7 +1204,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -1539,7 +1539,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -1577,7 +1577,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -1912,7 +1912,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -1950,7 +1950,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -2285,7 +2285,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -2323,7 +2323,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -2658,7 +2658,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -2696,7 +2696,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -3031,7 +3031,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -3069,7 +3069,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -3404,7 +3404,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -3442,7 +3442,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -3777,7 +3777,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -3815,7 +3815,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -4150,7 +4150,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -4188,7 +4188,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -4523,7 +4523,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -4561,7 +4561,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -4896,7 +4896,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -4934,7 +4934,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -5269,7 +5269,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -5307,7 +5307,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -5642,7 +5642,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -5680,7 +5680,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -6015,7 +6015,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -6053,7 +6053,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -6388,7 +6388,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -6426,7 +6426,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -6761,7 +6761,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -6799,7 +6799,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -7134,7 +7134,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -7172,7 +7172,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -7507,7 +7507,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -7545,7 +7545,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -7880,7 +7880,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -7918,7 +7918,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -8253,7 +8253,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -8291,7 +8291,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -8626,7 +8626,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -8664,7 +8664,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -8999,7 +8999,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -9037,7 +9037,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -9372,7 +9372,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -9410,7 +9410,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -9745,7 +9745,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -9783,7 +9783,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -10118,7 +10118,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -10156,7 +10156,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -10491,7 +10491,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -10529,7 +10529,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -10864,7 +10864,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -10902,7 +10902,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -11237,7 +11237,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -11275,7 +11275,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -11610,7 +11610,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -11648,7 +11648,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -11983,7 +11983,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -12021,7 +12021,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -12356,7 +12356,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -12394,7 +12394,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -12729,7 +12729,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -12767,7 +12767,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -13102,7 +13102,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -13140,7 +13140,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -13475,7 +13475,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -13513,7 +13513,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -13848,7 +13848,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -13886,7 +13886,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -14221,7 +14221,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -14259,7 +14259,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -14594,7 +14594,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -14632,7 +14632,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -14967,7 +14967,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -15005,7 +15005,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -15340,7 +15340,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -15378,7 +15378,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -15713,7 +15713,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -15751,7 +15751,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -16086,7 +16086,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -16124,7 +16124,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -16459,7 +16459,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -16497,7 +16497,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -16832,7 +16832,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -16870,7 +16870,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -17205,7 +17205,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -17243,7 +17243,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -17578,7 +17578,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -17616,7 +17616,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -17951,7 +17951,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -17989,7 +17989,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -18324,7 +18324,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -18362,7 +18362,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -18697,7 +18697,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -18735,7 +18735,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -19070,7 +19070,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -19108,7 +19108,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -19443,7 +19443,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -19481,7 +19481,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -19816,7 +19816,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -19854,7 +19854,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -20189,7 +20189,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -20227,7 +20227,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -20562,7 +20562,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -20600,7 +20600,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -20935,7 +20935,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -20973,7 +20973,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -21308,7 +21308,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -21346,7 +21346,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -21681,7 +21681,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -21719,7 +21719,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -22054,7 +22054,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -22092,7 +22092,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -22427,7 +22427,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -22465,7 +22465,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -22800,7 +22800,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -22838,7 +22838,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -23173,7 +23173,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -23211,7 +23211,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -23546,7 +23546,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -23584,7 +23584,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -23919,7 +23919,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -23957,7 +23957,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -24292,7 +24292,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -24330,7 +24330,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -24665,7 +24665,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -24703,7 +24703,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -25038,7 +25038,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -25076,7 +25076,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -25411,7 +25411,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -25449,7 +25449,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -25784,7 +25784,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -25822,7 +25822,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -26157,7 +26157,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -26195,7 +26195,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -26530,7 +26530,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -26568,7 +26568,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -26903,7 +26903,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -26941,7 +26941,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -27276,7 +27276,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -27314,7 +27314,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -27649,7 +27649,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -27687,7 +27687,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -28022,7 +28022,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -28060,7 +28060,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -28395,7 +28395,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -28433,7 +28433,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -28768,7 +28768,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -28806,7 +28806,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -29141,7 +29141,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -29179,7 +29179,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -29514,7 +29514,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -29552,7 +29552,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -29887,7 +29887,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -29925,7 +29925,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -30260,7 +30260,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -30298,7 +30298,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -30633,7 +30633,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -30671,7 +30671,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -31006,7 +31006,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -31044,7 +31044,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -31379,7 +31379,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -31417,7 +31417,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -31752,7 +31752,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -31790,7 +31790,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -32125,7 +32125,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -32163,7 +32163,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -32498,7 +32498,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -32536,7 +32536,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -32871,7 +32871,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -32909,7 +32909,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -33244,7 +33244,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -33282,7 +33282,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -33617,7 +33617,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -33655,7 +33655,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -33990,7 +33990,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -34028,7 +34028,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -34363,7 +34363,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -34401,7 +34401,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -34736,7 +34736,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -34774,7 +34774,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -35109,7 +35109,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -35147,7 +35147,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -35482,7 +35482,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -35520,7 +35520,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -35855,7 +35855,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -35893,7 +35893,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -36228,7 +36228,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -36266,7 +36266,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -36601,7 +36601,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -36639,7 +36639,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -36974,7 +36974,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -37012,7 +37012,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -37347,7 +37347,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -37385,7 +37385,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -37720,7 +37720,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -37758,7 +37758,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
@@ -38090,7 +38090,7 @@
                 "feature_key": "15058",
                 "key": "78978",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 0,
                 "value": "segment_two_override_priority_0"
               }
             ],
@@ -38128,7 +38128,7 @@
                 "feature_key": "15058",
                 "key": "78977",
                 "name": "string_feature",
-                "priority": true,
+                "priority": 1,
                 "value": "segment_three_override_priority_1"
               }
             ],
