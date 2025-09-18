@@ -1,123 +1,222 @@
 {
   "environment": {
+    "api_key": "n9fbf9h3v4fFgH3U3ngWhb",
+    "feature_states": [
+      {
+        "django_id": 78978,
+        "enabled": true,
+        "feature": {
+          "id": 15058,
+          "name": "string_feature",
+          "type": "STANDARD"
+        },
+        "feature_segment": null,
+        "feature_state_value": "foo",
+        "multivariate_feature_state_values": []
+      },
+      {
+        "django_id": 78980,
+        "enabled": true,
+        "feature": {
+          "id": 15059,
+          "name": "integer_feature",
+          "type": "STANDARD"
+        },
+        "feature_state_value": 1234,
+        "multivariate_feature_state_values": []
+      },
+      {
+        "django_id": 78982,
+        "enabled": false,
+        "feature": {
+          "id": 15060,
+          "name": "basic_flag",
+          "type": "STANDARD"
+        },
+        "feature_state_value": null,
+        "multivariate_feature_state_values": []
+      },
+      {
+        "django_id": 78984,
+        "enabled": true,
+        "feature": {
+          "id": 15061,
+          "name": "float_feature",
+          "type": "STANDARD"
+        },
+        "feature_state_value": "12.34",
+        "multivariate_feature_state_values": []
+      },
+      {
+        "django_id": 78986,
+        "enabled": true,
+        "feature": {
+          "id": 15062,
+          "name": "mv_feature",
+          "type": "MULTIVARIATE"
+        },
+        "feature_state_value": "foo",
+        "multivariate_feature_state_values": [
+          {
+            "id": 3404,
+            "multivariate_feature_option": {
+              "value": "baz"
+            },
+            "percentage_allocation": 30
+          },
+          {
+            "id": 3402,
+            "multivariate_feature_option": {
+              "value": "bar"
+            },
+            "percentage_allocation": 30
+          },
+          {
+            "id": 3405,
+            "multivariate_feature_option": {
+              "value": 1
+            },
+            "percentage_allocation": 0
+          },
+          {
+            "id": 3406,
+            "multivariate_feature_option": {
+              "value": true
+            },
+            "percentage_allocation": 0
+          }
+        ]
+      }
+    ],
+    "id": 12561,
+    "name": "Test Environment",
     "project": {
       "hide_disabled_flags": false,
+      "id": 5359,
+      "name": "Edge API Test Project",
+      "organisation": {
+        "feature_analytics": false,
+        "id": 13,
+        "name": "Flagsmith",
+        "persist_trait_data": true,
+        "stop_serving_flags": false
+      },
       "segments": [
         {
-          "name": "regular_segment",
           "feature_states": [
             {
-              "feature_state_value": "segment_override",
-              "multivariate_feature_state_values": [],
               "django_id": 81027,
+              "enabled": false,
               "feature": {
                 "id": 15058,
-                "type": "STANDARD",
-                "name": "string_feature"
+                "name": "string_feature",
+                "type": "STANDARD"
               },
-              "enabled": false
+              "feature_state_value": "segment_override",
+              "multivariate_feature_state_values": []
             }
           ],
           "id": 4267,
+          "name": "regular_segment",
           "rules": [
             {
-              "type": "ALL",
               "conditions": [],
               "rules": [
                 {
-                  "type": "ANY",
                   "conditions": [
                     {
-                      "value": "40",
+                      "operator": "LESS_THAN",
                       "property_": "age",
-                      "operator": "LESS_THAN"
+                      "value": "40"
                     }
                   ],
-                  "rules": []
+                  "rules": [],
+                  "type": "ANY"
                 },
                 {
-                  "type": "ANY",
                   "conditions": [
                     {
-                      "value": "21",
+                      "operator": "GREATER_THAN_INCLUSIVE",
                       "property_": "age",
-                      "operator": "GREATER_THAN_INCLUSIVE"
+                      "value": "21"
                     }
                   ],
-                  "rules": []
+                  "rules": [],
+                  "type": "ANY"
                 },
                 {
-                  "type": "ANY",
                   "conditions": [
                     {
-                      "value": "green",
+                      "operator": "EQUAL",
                       "property_": "favourite_colour",
-                      "operator": "EQUAL"
+                      "value": "green"
                     },
                     {
-                      "value": "blue",
+                      "operator": "EQUAL",
                       "property_": "favourite_colour",
-                      "operator": "EQUAL"
+                      "value": "blue"
                     }
                   ],
-                  "rules": []
+                  "rules": [],
+                  "type": "ANY"
                 }
-              ]
+              ],
+              "type": "ALL"
             }
           ]
         },
         {
-          "name": "10_percent",
           "feature_states": [
             {
-              "feature_state_value": "",
-              "multivariate_feature_state_values": [],
               "django_id": 81026,
+              "enabled": true,
               "feature": {
                 "id": 15060,
-                "type": "STANDARD",
-                "name": "basic_flag"
+                "name": "basic_flag",
+                "type": "STANDARD"
               },
-              "enabled": true
+              "feature_state_value": "",
+              "multivariate_feature_state_values": []
             }
           ],
           "id": 4268,
+          "name": "10_percent",
           "rules": [
             {
-              "type": "ALL",
               "conditions": [],
               "rules": [
                 {
-                  "type": "ANY",
                   "conditions": [
                     {
-                      "value": "0.1",
+                      "operator": "PERCENTAGE_SPLIT",
                       "property_": "",
-                      "operator": "PERCENTAGE_SPLIT"
+                      "value": "0.1"
                     }
                   ],
-                  "rules": []
+                  "rules": [],
+                  "type": "ANY"
                 }
-              ]
+              ],
+              "type": "ALL"
             }
           ]
         },
         {
           "feature_states": [
             {
-              "feature_state_value": "segment_two_override_priority_0",
-              "multivariate_feature_state_values": [],
               "django_id": 78978,
+              "enabled": true,
               "feature": {
                 "id": 15058,
-                "type": "STANDARD",
-                "name": "string_feature"
+                "name": "string_feature",
+                "type": "STANDARD"
               },
-              "enabled": true,
               "feature_segment": {
                 "priority": 0
               },
-              "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6"
+              "feature_state_value": "segment_two_override_priority_0",
+              "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa6",
+              "multivariate_feature_state_values": []
             }
           ],
           "id": 16,
@@ -150,19 +249,19 @@
         {
           "feature_states": [
             {
-              "feature_state_value": "segment_three_override_priority_1",
-              "multivariate_feature_state_values": [],
               "django_id": 78977,
+              "enabled": true,
               "feature": {
                 "id": 15058,
-                "type": "STANDARD",
-                "name": "string_feature"
+                "name": "string_feature",
+                "type": "STANDARD"
               },
-              "enabled": true,
               "feature_segment": {
                 "priority": 1
               },
-              "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa7"
+              "feature_state_value": "segment_three_override_priority_1",
+              "featurestate_uuid": "1545809c-e97f-4a1f-9e67-8b4f2b396aa7",
+              "multivariate_feature_state_values": []
             }
           ],
           "id": 17,
@@ -193,27 +292,30 @@
           ]
         },
         {
+          "created_at": "2025-07-16T07:58:09.381757Z",
+          "deleted_at": null,
+          "description": "Testing Context values.",
           "feature_states": [
             {
-              "feature_state_value": "context_values",
-              "multivariate_feature_state_values": [],
               "django_id": 81027,
+              "enabled": true,
               "feature": {
                 "id": 15058,
-                "type": "STANDARD",
-                "name": "string_feature"
+                "name": "string_feature",
+                "type": "STANDARD"
               },
-              "enabled": true
+              "feature_state_value": "context_values",
+              "multivariate_feature_state_values": []
             }
           ],
           "id": 381942,
+          "name": "context_values",
+          "project": 5359,
           "rules": [
             {
-              "type": "ALL",
+              "conditions": [],
               "rules": [
                 {
-                  "type": "ALL",
-                  "rules": [],
                   "conditions": [
                     {
                       "operator": "IN",
@@ -225,122 +327,20 @@
                       "property_": "$.environment.name",
                       "value": "Test Environment"
                     }
-                  ]
+                  ],
+                  "rules": [],
+                  "type": "ALL"
                 }
               ],
-              "conditions": []
+              "type": "ALL"
             }
           ],
-          "deleted_at": null,
-          "uuid": "e03dff51-dfbe-4dfb-a443-2c93bc0f0da9",
-          "name": "context_values",
-          "description": "Testing Context values.",
-          "version": 1,
-          "created_at": "2025-07-16T07:58:09.381757Z",
           "updated_at": "2025-07-16T07:58:09.391444Z",
-          "project": 5359
+          "uuid": "e03dff51-dfbe-4dfb-a443-2c93bc0f0da9",
+          "version": 1
         }
-      ],
-      "name": "Edge API Test Project",
-      "id": 5359,
-      "organisation": {
-        "persist_trait_data": true,
-        "name": "Flagsmith",
-        "feature_analytics": false,
-        "stop_serving_flags": false,
-        "id": 13
-      }
-    },
-    "api_key": "n9fbf9h3v4fFgH3U3ngWhb",
-    "feature_states": [
-      {
-        "feature_state_value": "foo",
-        "multivariate_feature_state_values": [],
-        "feature_segment": null,
-        "django_id": 78978,
-        "feature": {
-          "id": 15058,
-          "type": "STANDARD",
-          "name": "string_feature"
-        },
-        "enabled": true
-      },
-      {
-        "feature_state_value": 1234,
-        "multivariate_feature_state_values": [],
-        "django_id": 78980,
-        "feature": {
-          "id": 15059,
-          "type": "STANDARD",
-          "name": "integer_feature"
-        },
-        "enabled": true
-      },
-      {
-        "feature_state_value": null,
-        "multivariate_feature_state_values": [],
-        "django_id": 78982,
-        "feature": {
-          "id": 15060,
-          "type": "STANDARD",
-          "name": "basic_flag"
-        },
-        "enabled": false
-      },
-      {
-        "feature_state_value": "12.34",
-        "multivariate_feature_state_values": [],
-        "django_id": 78984,
-        "feature": {
-          "id": 15061,
-          "type": "STANDARD",
-          "name": "float_feature"
-        },
-        "enabled": true
-      },
-      {
-        "feature_state_value": "foo",
-        "multivariate_feature_state_values": [
-          {
-            "id": 3404,
-            "multivariate_feature_option": {
-              "value": "baz"
-            },
-            "percentage_allocation": 30
-          },
-          {
-            "id": 3402,
-            "multivariate_feature_option": {
-              "value": "bar"
-            },
-            "percentage_allocation": 30
-          },
-          {
-            "id": 3405,
-            "multivariate_feature_option": {
-              "value": 1
-            },
-            "percentage_allocation": 0
-          },
-          {
-            "id": 3406,
-            "multivariate_feature_option": {
-              "value": true
-            },
-            "percentage_allocation": 0
-          }
-        ],
-        "django_id": 78986,
-        "feature": {
-          "id": 15062,
-          "type": "MULTIVARIATE",
-          "name": "mv_feature"
-        },
-        "enabled": true
-      }
-    ],
-    "name": "Test Environment",
-    "id": 12561
+      ]
+    }
   },
   "test_cases": [
     {
