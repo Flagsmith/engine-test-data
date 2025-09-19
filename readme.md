@@ -10,15 +10,15 @@ Each JSON file should consist of a single object in the following format.
   "environment": {/* The environment document as found in DynamoDB */},
   "test_cases": [
     {
-      "context": {/* The Evaluation Context (see note below) */},
-      "response": {/* The expected response */},
+      "context": {/* The input Evaluation Context */},
+      "result": {/* The expected Evaluation Result */},
     }
   ]
 }
 ```
 
 > [!NOTE]
-> **Evaluation Context** is defined by [this specification](https://github.com/Flagsmith/flagsmith/blob/main/sdk/evaluation-context.json).
+> See **Evaluation Context** and **Evaluation Result** [specifications](https://github.com/Flagsmith/flagsmith/blob/main/sdk/).
 
 To use this data, you will need to write a test case in the repository which contains the engine code and include 
 this repository as a submodule to get access to the json files.
