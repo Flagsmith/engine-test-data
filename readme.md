@@ -7,7 +7,6 @@ Each JSON file should consist of a single object in the following format.
 
 ```jsonc
 {
-  "environment": {/* The environment document as found in DynamoDB */},
   "test_cases": [
     {
       "context": {/* The input Evaluation Context */},
