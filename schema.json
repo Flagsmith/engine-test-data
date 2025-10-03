@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "context": {
+            "$ref": "https://raw.githubusercontent.com/Flagsmith/flagsmith/refs/heads/main/sdk/evaluation-context.json"
+        },
+        "result": {
+            "$ref": "https://raw.githubusercontent.com/Flagsmith/flagsmith/refs/heads/main/sdk/evaluation-result.json"
+        }
+    }
+}
