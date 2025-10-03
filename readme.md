@@ -8,4 +8,4 @@ Test cases ported from v1 are named in the pattern of `test_case/test_{context_v
 
 Single test case contents are described with [schema.json](./schema.json) JSONSchema.
 
-A test case file may contain a test description in the form of a JSONC comment in the beginning of the file. Test implementations should be ready to parse JSONC.
+A test case file may contain a test description in the form of a JSON5-compliant comment in the beginning of the file. Test implementations should be ready to parse JSON5.
