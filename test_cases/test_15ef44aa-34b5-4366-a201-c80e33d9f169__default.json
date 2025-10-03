@@ -1,0 +1,318 @@
+{
+  "$schema": "https://github.com/Flagsmith/engine-test-data/blob/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "n9fbf9h3v4fFgH3U3ngWhb",
+      "name": "Test Environment"
+    },
+    "features": {
+      "basic_flag": {
+        "enabled": false,
+        "feature_key": "15060",
+        "key": "78982",
+        "name": "basic_flag",
+        "value": null
+      },
+      "float_feature": {
+        "enabled": true,
+        "feature_key": "15061",
+        "key": "78984",
+        "name": "float_feature",
+        "value": "12.34"
+      },
+      "integer_feature": {
+        "enabled": true,
+        "feature_key": "15059",
+        "key": "78980",
+        "name": "integer_feature",
+        "value": 1234
+      },
+      "mv_feature": {
+        "enabled": true,
+        "feature_key": "15062",
+        "key": "78986",
+        "name": "mv_feature",
+        "value": "foo",
+        "variants": [
+          {
+            "value": "bar",
+            "weight": 30
+          },
+          {
+            "value": "baz",
+            "weight": 30
+          },
+          {
+            "value": 1,
+            "weight": 0
+          },
+          {
+            "value": true,
+            "weight": 0
+          }
+        ]
+      },
+      "string_feature": {
+        "enabled": true,
+        "feature_key": "15058",
+        "key": "78978",
+        "name": "string_feature",
+        "value": "foo"
+      }
+    },
+    "identity": {
+      "identifier": "15ef44aa-34b5-4366-a201-c80e33d9f169",
+      "key": 32103696,
+      "traits": {
+        "age": 32,
+        "favourite_colour": "yellow"
+      }
+    },
+    "segments": {
+      "16": {
+        "key": "16",
+        "name": "segment_two",
+        "overrides": [
+          {
+            "enabled": true,
+            "feature_key": "15058",
+            "key": "78978",
+            "name": "string_feature",
+            "priority": 0,
+            "value": "segment_two_override_priority_0"
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "two",
+                    "value": "2"
+                  },
+                  {
+                    "operator": "IS_SET",
+                    "property": "two",
+                    "value": null
+                  }
+                ],
+                "rules": [],
+                "type": "ANY"
+              }
+            ],
+            "type": "ALL"
+          }
+        ]
+      },
+      "17": {
+        "key": "17",
+        "name": "segment_three",
+        "overrides": [
+          {
+            "enabled": true,
+            "feature_key": "15058",
+            "key": "78977",
+            "name": "string_feature",
+            "priority": 1,
+            "value": "segment_three_override_priority_1"
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "three",
+                    "value": "3"
+                  },
+                  {
+                    "operator": "IS_NOT_SET",
+                    "property": "something_that_is_not_set",
+                    "value": null
+                  }
+                ],
+                "rules": [],
+                "type": "ALL"
+              }
+            ],
+            "type": "ALL"
+          }
+        ]
+      },
+      "381942": {
+        "key": "381942",
+        "name": "context_values",
+        "overrides": [
+          {
+            "enabled": true,
+            "feature_key": "15058",
+            "key": "81027",
+            "name": "string_feature",
+            "value": "context_values"
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "operator": "IN",
+                    "property": "$.identity.identifier",
+                    "value": "1bde8445-ca19-4bda-a9d5-3543a800fc0f"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "Test Environment"
+                  }
+                ],
+                "rules": [],
+                "type": "ALL"
+              }
+            ],
+            "type": "ALL"
+          }
+        ]
+      },
+      "4267": {
+        "key": "4267",
+        "name": "regular_segment",
+        "overrides": [
+          {
+            "enabled": false,
+            "feature_key": "15058",
+            "key": "81027",
+            "name": "string_feature",
+            "value": "segment_override"
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "operator": "LESS_THAN",
+                    "property": "age",
+                    "value": "40"
+                  }
+                ],
+                "rules": [],
+                "type": "ANY"
+              },
+              {
+                "conditions": [
+                  {
+                    "operator": "GREATER_THAN_INCLUSIVE",
+                    "property": "age",
+                    "value": "21"
+                  }
+                ],
+                "rules": [],
+                "type": "ANY"
+              },
+              {
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "favourite_colour",
+                    "value": "green"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "favourite_colour",
+                    "value": "blue"
+                  }
+                ],
+                "rules": [],
+                "type": "ANY"
+              }
+            ],
+            "type": "ALL"
+          }
+        ]
+      },
+      "4268": {
+        "key": "4268",
+        "name": "10_percent",
+        "overrides": [
+          {
+            "enabled": true,
+            "feature_key": "15060",
+            "key": "81026",
+            "name": "basic_flag",
+            "value": ""
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "operator": "PERCENTAGE_SPLIT",
+                    "property": "",
+                    "value": "0.1"
+                  }
+                ],
+                "rules": [],
+                "type": "ANY"
+              }
+            ],
+            "type": "ALL"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "basic_flag": {
+        "enabled": false,
+        "feature_key": "15060",
+        "name": "basic_flag",
+        "reason": "DEFAULT",
+        "value": null
+      },
+      "float_feature": {
+        "enabled": true,
+        "feature_key": "15061",
+        "name": "float_feature",
+        "reason": "DEFAULT",
+        "value": "12.34"
+      },
+      "integer_feature": {
+        "enabled": true,
+        "feature_key": "15059",
+        "name": "integer_feature",
+        "reason": "DEFAULT",
+        "value": 1234
+      },
+      "mv_feature": {
+        "enabled": true,
+        "feature_key": "15062",
+        "name": "mv_feature",
+        "reason": "SPLIT; weight=30",
+        "value": "baz"
+      },
+      "string_feature": {
+        "enabled": true,
+        "feature_key": "15058",
+        "name": "string_feature",
+        "reason": "DEFAULT",
+        "value": "foo"
+      }
+    },
+    "segments": []
+  }
+}

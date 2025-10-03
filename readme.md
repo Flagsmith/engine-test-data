@@ -1,30 +1,11 @@
 # Engine Test Data
 
-This repository contains a single directory containing json files that can be used to test that any Flagsmith engine
-written in a given language is correct. 
+E2E tests for all Flagsmith Engine implementations.
 
-Each JSON file should consist of a single object in the following format.
+Test cases ported from v1 are named in the pattern of `test_case/test_{context_value}__{matching_segments}.json`, where:
+ - `{context_value}` is the main context value matched in the case — usually, `$.identity.identifier`.
+ - `{matching_segments}` is a dunder-delimited matched segments list, e.g. `segment_two__segment_three`. In case no segments match, `default` is used.
 
-```json
-{
-  "environment": {...},  // the environment document as found in DynamoDB
-  "identities_and_responses": [
-    {
-      "identity": {...},  // the identity as found in DynamoDB,
-      "response": {...},  // the response that was obtained from the current API
-    }
-  ]
-}
-```
+Single test case contents are described with [schema.json](./schema.json) JSONSchema.
 
-To use this data, you will need to write a test case in the repository which contains the engine code and include 
-this repository as a submodule to get access to the json files.
-
-To add the git submodule: 
-
-```bash
-git submodule add git@github.com:Flagsmith/engine-test-data.git tests/engine_tests/engine-test-data
-```
-
-An example of how to use the test data can be found in the flagsmith-flag-engine repository 
-[here](https://github.com/Flagsmith/flagsmith-engine/blob/main/tests/engine_tests/test_engine.py).  
+A test case file may contain a test description in the form of a JSON5-compliant comment in the beginning of the file. Test implementations should be ready to parse JSON5.
