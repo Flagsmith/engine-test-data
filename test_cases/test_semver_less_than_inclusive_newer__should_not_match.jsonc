@@ -1,0 +1,40 @@
+{
+  // Given: A segment with LESS_THAN_INCLUSIVE condition checking version <= "1.0.0" using semver format
+  // When: An evaluation context with an identity that has version "1.0.1" (newer version)
+  // Then: The context should not be considered part of the segment
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "newer_version_user",
+      "key": "key_newer_version_user",
+      "traits": {
+        "app_version": "1.0.1"
+      }
+    },
+    "segments": {
+      "59": {
+        "key": "59",
+        "name": "segment_version_lte_newer",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "LESS_THAN_INCLUSIVE",
+                "property": "app_version",
+                "value": "1.0.0:semver"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
