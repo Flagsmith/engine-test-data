@@ -1,0 +1,40 @@
+{
+  // Given: A segment with GREATER_THAN_INCLUSIVE condition checking version >= "1.2.0" using semver format
+  // When: An evaluation context with an identity that has version "1.0.1" (older version)
+  // Then: The context should not be considered part of the segment
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "older_version_user",
+      "key": "key_older_version_user",
+      "traits": {
+        "app_version": "1.0.1"
+      }
+    },
+    "segments": {
+      "55": {
+        "key": "55",
+        "name": "segment_version_gte_older",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "GREATER_THAN_INCLUSIVE",
+                "property": "app_version",
+                "value": "1.2.0:semver"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
