@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/Flagsmith/engine-test-data/blob/v2.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "n9fbf9h3v4fFgH3U3ngWhb",
