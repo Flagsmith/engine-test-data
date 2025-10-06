@@ -1,6 +1,6 @@
 {
-  // Given: A segment with IN condition using array format with actual array value (not string)
-  // When: An evaluation context with an identity that has numeric trait matching one of the array values
+  // Given: A segment with IN condition using an array of strings
+  // When: An evaluation context with an identity that has numeric trait (integer) matching one of the array values (strings)
   // Then: The context should be considered part of the segment
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
