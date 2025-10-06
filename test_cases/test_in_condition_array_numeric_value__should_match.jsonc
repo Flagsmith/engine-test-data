@@ -1,0 +1,51 @@
+{
+  // Given: A segment with IN condition using an array of strings
+  // When: An evaluation context with an identity that has numeric trait (integer) matching one of the array values (strings)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "array_value_user",
+      "key": "key_array_value_user",
+      "traits": {
+        "level": 1
+      }
+    },
+    "segments": {
+      "25": {
+        "key": "25",
+        "name": "segment_array_value_condition",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "level",
+                "value": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "25",
+        "name": "segment_array_value_condition"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  // Given: A segment with IN condition using JSON array format for string values
+  // When: An evaluation context with an identity that has status "premium" (matches one of ["active","premium","vip"])
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "json_array_user",
+      "key": "key_json_array_user",
+      "traits": {
+        "status": "premium"
+      }
+    },
+    "segments": {
+      "21": {
+        "key": "21",
+        "name": "segment_json_array_status",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "status",
+                "value": "[\"active\",\"premium\",\"vip\"]"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "21",
+        "name": "segment_json_array_status"
+      }
+    ]
+  }
+}
