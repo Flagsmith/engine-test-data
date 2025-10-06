@@ -1,0 +1,41 @@
+{
+  // Given: A segment with an IN condition checking using comma-separated string values
+  // When: An evaluation context with an identity that has status "prem" (part of "premium" but not exact match)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "premium_user",
+      "key": "key_premium_user",
+      "traits": {
+        "status": "prem"
+      }
+    },
+    "segments": {
+      "12": {
+        "key": "12",
+        "name": "segment_valued_customers",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "status",
+                "value": "active,premium,vip"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

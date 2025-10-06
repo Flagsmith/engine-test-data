@@ -1,0 +1,46 @@
+{
+  // Given: A segment with IN condition using a JSON literal string (not an array)
+  // When: An evaluation context with an identity that has a trait matching the exact JSON literal
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "json_literal_user",
+      "key": "key_json_literal_user",
+      "traits": {
+        "description": "\"I am a valid JSON literal but not a list\""
+      }
+    },
+    "segments": {
+      "26": {
+        "key": "26",
+        "name": "segment_json_literal_condition",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "description",
+                "value": "\"I am a valid JSON literal but not a list\""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "26",
+        "name": "segment_json_literal_condition"
+      }
+    ]
+  }
+}

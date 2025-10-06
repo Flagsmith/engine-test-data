@@ -1,0 +1,46 @@
+{
+  // Given: A segment with IN condition using comma-separated numeric values
+  // When: An evaluation context with an identity that has level = 2 (matches one of "1,2,3,4")
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "level_user",
+      "key": "key_level_user",
+      "traits": {
+        "level": 2
+      }
+    },
+    "segments": {
+      "22": {
+        "key": "22",
+        "name": "segment_basic_levels",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "level",
+                "value": "1,2,3,4"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "22",
+        "name": "segment_basic_levels"
+      }
+    ]
+  }
+}
