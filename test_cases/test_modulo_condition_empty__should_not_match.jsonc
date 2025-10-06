@@ -1,0 +1,41 @@
+{
+  // Given: A segment with MODULO condition with empty value ""
+  // When: An evaluation context with an identity that has user_id = 1
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "empty_format_user",
+      "key": "key_empty_format_user",
+      "traits": {
+        "user_id": 1
+      }
+    },
+    "segments": {
+      "66": {
+        "key": "66",
+        "name": "segment_modulo_empty_format",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "MODULO",
+                "property": "user_id",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

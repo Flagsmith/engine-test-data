@@ -1,0 +1,41 @@
+{
+  // Given: A segment with MODULO condition checking user_id % 3 == 0 (even divisible by 3)
+  // When: An evaluation context with an identity that has user_id = "dummy" (non-numeric string)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "string_user",
+      "key": "key_string_user",
+      "traits": {
+        "user_id": "dummy"
+      }
+    },
+    "segments": {
+      "62": {
+        "key": "62",
+        "name": "segment_modulo_string_invalid",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "MODULO",
+                "property": "user_id",
+                "value": "3|0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
