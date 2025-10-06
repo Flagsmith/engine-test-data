@@ -2,6 +2,7 @@
   // Given: A segment with GREATER_THAN_INCLUSIVE condition checking version >= "1.0.0" using semver format
   // When: An evaluation context with an identity that has version "1.0.1" (newer version)
   // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",
