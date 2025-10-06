@@ -1,0 +1,46 @@
+{
+  // Given: A segment with MODULO condition checking user_id % 2 == 0 (even numbers)
+  // When: An evaluation context with an identity that has user_id = 2 (satisfies modulo condition)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "even_user",
+      "key": "key_even_user",
+      "traits": {
+        "user_id": 2
+      }
+    },
+    "segments": {
+      "20": {
+        "key": "20",
+        "name": "segment_even_users",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "MODULO",
+                "property": "user_id",
+                "value": "2|0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "20",
+        "name": "segment_even_users"
+      }
+    ]
+  }
+}

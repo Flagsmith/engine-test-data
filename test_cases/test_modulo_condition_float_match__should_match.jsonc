@@ -1,0 +1,46 @@
+{
+  // Given: A segment with MODULO condition checking user_id % 4 == 3 (remainder 3)
+  // When: An evaluation context with an identity that has user_id = 35.0 (satisfies modulo condition)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "float_matching_user",
+      "key": "key_float_matching_user",
+      "traits": {
+        "user_id": 35.0
+      }
+    },
+    "segments": {
+      "61": {
+        "key": "61",
+        "name": "segment_modulo_float_match",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "MODULO",
+                "property": "user_id",
+                "value": "4|3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "61",
+        "name": "segment_modulo_float_match"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  // Given: A segment with MODULO condition checking version % 3 == 0 (semver string)
+  // When: An evaluation context with an identity that has version = "1.0.0" (non-numeric semver)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "semver_user",
+      "key": "key_semver_user",
+      "traits": {
+        "version": "1.0.0"
+      }
+    },
+    "segments": {
+      "63": {
+        "key": "63",
+        "name": "segment_modulo_semver_invalid",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "MODULO",
+                "property": "version",
+                "value": "3|0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
