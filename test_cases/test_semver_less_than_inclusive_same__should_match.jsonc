@@ -1,0 +1,46 @@
+{
+  // Given: A segment with LESS_THAN_INCLUSIVE condition checking version <= "1.0.0" using semver format
+  // When: An evaluation context with an identity that has version "1.0.0" (same version)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "same_version_user",
+      "key": "key_same_version_user",
+      "traits": {
+        "app_version": "1.0.0"
+      }
+    },
+    "segments": {
+      "58": {
+        "key": "58",
+        "name": "segment_version_lte_same",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "LESS_THAN_INCLUSIVE",
+                "property": "app_version",
+                "value": "1.0.0:semver"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "58",
+        "name": "segment_version_lte_same"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  // Given: A segment with GREATER_THAN condition checking version > "1.0.1" using semver format
+  // When: An evaluation context with an identity that has version "1.0.1" (same version)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "same_version_user",
+      "key": "key_same_version_user",
+      "traits": {
+        "app_version": "1.0.1"
+      }
+    },
+    "segments": {
+      "48": {
+        "key": "48",
+        "name": "segment_version_greater_same",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "GREATER_THAN",
+                "property": "app_version",
+                "value": "1.0.1:semver"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

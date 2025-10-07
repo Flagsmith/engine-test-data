@@ -1,0 +1,41 @@
+{
+  // Given: A segment with EQUAL condition checking version equals "1.0.1" using semver format
+  // When: An evaluation context with an identity that has version "1.0.0" (different version)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "different_version_user",
+      "key": "key_different_version_user",
+      "traits": {
+        "app_version": "1.0.0"
+      }
+    },
+    "segments": {
+      "43": {
+        "key": "43",
+        "name": "segment_version_different_equal",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "app_version",
+                "value": "1.0.1:semver"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
