@@ -1,0 +1,67 @@
+{
+  // Given: Two segments with REGEX condition checking for digit-based pattern \d*[13579]$
+  // When: An evaluation context with an identity that has version = 123 (numeric value matches digit pattern)
+  // and old_version = 122 (numeric value does not match digit pattern)
+  // Then: The context should be considered part of only one segment
+  //
+  // Ported from Flagsmith/flagsmith-php-client#72
+  // See also https://github.com/Flagsmith/flagsmith-php-client/issues/71
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "numeric_user",
+      "key": "key_numeric_user",
+      "traits": {
+        "version": 123,
+        "old_version": 122
+      }
+    },
+    "segments": {
+      "78": {
+        "key": "78",
+        "name": "segment_regex_numeric_type",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "REGEX",
+                "property": "version",
+                "value": "\\d*[13579]$"
+              }
+            ]
+          }
+        ]
+      },
+      "79": {
+        "key": "79",
+        "name": "segment_regex_numeric_type_should_not_match",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "REGEX",
+                "property": "old_version",
+                "value": "\\d*[13579]$"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "78",
+        "name": "segment_regex_numeric_type"
+      }
+    ]
+  }
+}
