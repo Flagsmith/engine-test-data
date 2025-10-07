@@ -1,6 +1,6 @@
 {
   // Given: A segment with REGEX condition checking for digit pattern \d
-  // When: An evaluation context with an identity that has version = 1 (numeric value matches digit pattern)
+  // When: An evaluation context with an identity that has a version trait containing digits
   // Then: The context should be considered part of the segment
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
