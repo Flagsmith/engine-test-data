@@ -1,0 +1,46 @@
+{
+  // Given: A segment with REGEX condition checking if username matches pattern "[a-z]+"
+  // When: An evaluation context with an identity that has username = "johndoe" (matches pattern)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "pattern_user",
+      "key": "key_pattern_user",
+      "traits": {
+        "username": "johndoe"
+      }
+    },
+    "segments": {
+      "17": {
+        "key": "17",
+        "name": "segment_lowercase_username",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "REGEX",
+                "property": "username",
+                "value": "[a-z]+"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "17",
+        "name": "segment_lowercase_username"
+      }
+    ]
+  }
+}

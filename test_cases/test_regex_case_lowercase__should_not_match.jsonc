@@ -1,0 +1,41 @@
+{
+  // Given: A segment with REGEX condition checking for lowercase pattern [a-z]+
+  // When: An evaluation context with an identity that has text = "FOO" (uppercase, doesn't match)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "uppercase_user",
+      "key": "key_uppercase_user",
+      "traits": {
+        "text": "FOO"
+      }
+    },
+    "segments": {
+      "77": {
+        "key": "77",
+        "name": "segment_regex_case_sensitive",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "REGEX",
+                "property": "text",
+                "value": "[a-z]+"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

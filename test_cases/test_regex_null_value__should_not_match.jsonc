@@ -1,0 +1,41 @@
+{
+  // Given: A segment with REGEX condition checking for pattern [a-z]
+  // When: An evaluation context with an identity that has description = null
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "null_user",
+      "key": "key_null_user",
+      "traits": {
+        "description": null
+      }
+    },
+    "segments": {
+      "79": {
+        "key": "79",
+        "name": "segment_regex_null_value",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "REGEX",
+                "property": "description",
+                "value": "[a-z]"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

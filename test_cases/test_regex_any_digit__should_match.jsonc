@@ -1,0 +1,46 @@
+{
+  // Given: A segment with REGEX condition checking for digit pattern \d
+  // When: An evaluation context with an identity that has version = 1 (numeric value matches digit pattern)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "any_digit_user",
+      "key": "key_any_digit_user",
+      "traits": {
+        "version": "1.2.3"
+      }
+    },
+    "segments": {
+      "78": {
+        "key": "78",
+        "name": "segment_regex_any_digit",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "REGEX",
+                "property": "version",
+                "value": "\\d"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "78",
+        "name": "segment_regex_any_digit"
+      }
+    ]
+  }
+}
