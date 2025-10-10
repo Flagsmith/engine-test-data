@@ -1,0 +1,49 @@
+{
+  // Given: A segment with metadata
+  // When: An evaluation context matching the segment rules
+  // Then: The result should include the segment metadata
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "metadata_user",
+      "key": "key_metadata_user",
+    },
+    "segments": {
+      "422": {
+        "key": "422",
+        "name": "segment_with_metadata",
+        "metadata": {
+          "source": "imported"
+        },
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.identity.identifier",
+                "value": "metadata_user"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "422",
+        "name": "segment_with_metadata",
+        "metadata": {
+          "source": "imported"
+        }
+      }
+    ]
+  }
+}
