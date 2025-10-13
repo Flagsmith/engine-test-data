@@ -1,0 +1,46 @@
+{
+  // Given: A segment with EQUAL condition against a JSONPath `$.identity` (which is not a valid JSONPath for traits, but is a valid trait key)
+  // When: An evaluation context with an identity that has a trait matching the segment
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "identity_user",
+      "key": "key_identity_user",
+      "traits": {
+        "$.identity": "match"
+      }
+    },
+    "segments": {
+      "99": {
+        "key": "99",
+        "name": "segment_jsonpath_like_trait__existing_jsonpath",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.identity",
+                "value": "match"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "99",
+        "name": "segment_jsonpath_like_trait__existing_jsonpath"
+      }
+    ]
+  }
+}

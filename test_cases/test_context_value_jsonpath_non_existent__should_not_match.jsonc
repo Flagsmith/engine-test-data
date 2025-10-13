@@ -1,0 +1,34 @@
+{
+  // Given: A segment with IS_SET condition against a non-existent JSONPath `$.leads.to.nowhere`
+  // When: An evaluation context
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "segments": {
+      "99": {
+        "key": "99",
+        "name": "segment_jsonpath_context_value_unresolvable",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IS_SET",
+                "property": "$.leads.to.nowhere",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

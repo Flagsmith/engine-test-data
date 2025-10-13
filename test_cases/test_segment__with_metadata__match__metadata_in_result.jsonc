@@ -10,7 +10,7 @@
     },
     "identity": {
       "identifier": "metadata_user",
-      "key": "key_metadata_user",
+      "key": "key_metadata_user"
     },
     "segments": {
       "422": {
