@@ -1,0 +1,59 @@
+{
+  // Given: A segment with IS_NOT_SET/EQUAL condition against atypical context values:
+  // - `$.identity`: an object, not a primitive value — should not be treated as a context value, expected to be ignored
+  // - `trait key "with quotes"`: a smoke test for escaped quotes
+  // - `$.leads.to.nowhere`: a non-existent path
+  // When: An evaluation context with an atypical trait key set to expected matching value
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "atypical",
+      "key": "key_atypical_context_values_user",
+      "traits": {
+        "trait key \"with quotes\"": "some value"
+      }
+    },
+    "segments": {
+      "99": {
+        "key": "99",
+        "name": "segment_atypical_context_values",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IS_NOT_SET",
+                "property": "$.identity", // Paths that lead to non-primitive values are resolved as not set
+                "value": ""
+              },
+              {
+                "operator": "EQUAL",
+                "property": "trait key \"with quotes\"", // Trait keys with escaped characters are treated as-is
+                "value": "some value"
+              },
+              {
+                "operator": "IS_NOT_SET",
+                "property": "$.leads.to.nowhere", // Non-existent paths are treated as not set
+                "value": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "99",
+        "name": "segment_atypical_context_values"
+      }
+    ]
+  }
+}
