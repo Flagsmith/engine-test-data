@@ -1,0 +1,38 @@
+{
+  // Given: A segment with an CONTAINS condition against an object (`$.identity`)
+  // When: An evaluation context with an identity
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "object_user",
+      "key": "key_object_user"
+    },
+    "segments": {
+      "99": {
+        "key": "99",
+        "name": "segment_pointing_to_object",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "CONTAINS",
+                "property": "$.identity",
+                "value": "object_user"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
