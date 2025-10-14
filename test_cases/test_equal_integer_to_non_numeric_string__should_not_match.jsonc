@@ -1,0 +1,41 @@
+{
+  // Given: A segment with an EQUAL condition checking if age equals "not_an_int"
+  // When: An evaluation context with an identity that has age 1 (integer)
+  // Then: The context should not be considered part of the segment due to failed conversion
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "age": 1
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "test_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "age",
+                "value": "not_an_int"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

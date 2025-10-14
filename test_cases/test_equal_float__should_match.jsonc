@@ -1,0 +1,46 @@
+{
+  // Given: A segment for specific version users with an EQUAL condition checking if ratio equals "1.23"
+  // When: An evaluation context with an identity that has version 1.23 (float)
+  // Then: The context should be considered part of the segment due to type conversion
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "ratio_user",
+      "key": "key_ratio_user",
+      "traits": {
+        "ratio": 1.23
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "specific_ratio_users_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "ratio",
+                "value": "1.23"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "specific_ratio_users_segment"
+      }
+    ]
+  }
+}

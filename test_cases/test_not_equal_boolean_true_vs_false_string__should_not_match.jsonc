@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  // Given: A segment with a NOT_EQUAL condition checking if is_active is not equal to "False"
+  // When: An evaluation context with an identity that has is_active true (boolean)
+  // Then: The context should be considered part of the segment since true != "False"
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "is_active": true
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "test_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "NOT_EQUAL",
+                "property": "is_active",
+                "value": "False"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "test_segment"
+      }
+    ]
+  }
+}

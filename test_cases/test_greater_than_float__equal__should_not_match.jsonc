@@ -1,0 +1,41 @@
+{
+  // Given: A segment with a GREATER_THAN condition checking if rating > 2.1
+  // When: An evaluation context with an identity that has rating 2.1 (float, equal to threshold)
+  // Then: The context should not be considered part of the segment since 2.1 is not > 2.1
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "equal_rated_content",
+      "key": "key_equal_rated_content",
+      "traits": {
+        "rating": 2.1
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "high_rated_content_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "GREATER_THAN",
+                "property": "rating",
+                "value": "2.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

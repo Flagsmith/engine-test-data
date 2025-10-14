@@ -1,0 +1,41 @@
+{
+  // Given: A segment for non-subscribers with a NOT_EQUAL condition checking if is_subscribed != "False"
+  // When: An evaluation context with an identity that has is_subscribed false (boolean)
+  // Then: The context should not be considered part of the segment since false == "False"
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "non_subscriber",
+      "key": "key_non_subscriber",
+      "traits": {
+        "is_subscribed": false
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "subscribers_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "NOT_EQUAL",
+                "property": "is_subscribed",
+                "value": "False"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
