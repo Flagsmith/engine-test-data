@@ -1,0 +1,46 @@
+{
+  // Given: A segment for active users with an EQUAL condition checking if is_active equals "False" and "false"
+  // When: An evaluation context with an identity that has is_active 0 (integer)
+  // Then: The context should not be considered part of the segment 
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "active_user",
+      "key": "key_active_user",
+      "traits": {
+        "is_active": 0
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "active_users_segment",
+        "rules": [
+          {
+            "type": "ANY",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "is_active",
+                "value": "False"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "is_active",
+                "value": "false"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

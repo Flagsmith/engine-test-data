@@ -1,0 +1,46 @@
+{
+  // Given: A segment for non-beginners with a NOT_EQUAL condition checking if level != "1"
+  // When: An evaluation context with an identity that has level 5 (integer, different from string "1")
+  // Then: The context should be considered part of the segment due to type conversion
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "experienced_user",
+      "key": "key_experienced_user",
+      "traits": {
+        "level": 5
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "experienced_users_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "NOT_EQUAL",
+                "property": "level",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "experienced_users_segment"
+      }
+    ]
+  }
+}

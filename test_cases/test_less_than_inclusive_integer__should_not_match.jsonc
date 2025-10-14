@@ -1,0 +1,41 @@
+{
+  // Given: A segment for budget purchases with a LESS_THAN_INCLUSIVE condition checking if price <= 100
+  // When: An evaluation context with an identity that has price 150 (greater than threshold)  
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "expensive_purchase",
+      "key": "key_expensive_purchase",
+      "traits": {
+        "price": 150
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "budget_purchases_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "LESS_THAN_INCLUSIVE",
+                "property": "price",
+                "value": "100"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

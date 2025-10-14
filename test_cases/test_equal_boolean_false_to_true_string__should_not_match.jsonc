@@ -1,0 +1,49 @@
+{
+  // Given: A segment with an EQUAL condition checking if is_active equals "True" and "true"
+  // When: An evaluation context with an identity that has is_active false (boolean)
+  // Then: The context should not be considered part of the segment due to value mismatch
+  //
+  // NOTE: For boolean traits/context values, we expect the engine to perform type conversion
+  //       when comparing against string values "True" and "true".
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "is_active": false
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "test_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "is_active",
+                "value": "True"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "is_active",
+                "value": "true"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

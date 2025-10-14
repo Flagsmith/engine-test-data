@@ -1,0 +1,46 @@
+{
+  // Given: A segment with a GREATER_THAN_INCLUSIVE condition checking if rating >= 2.1
+  // When: An evaluation context with an identity that has rating 2.1 (float, exactly equal to threshold)
+  // Then: The context should be considered part of the segment due to inclusive comparison
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "qualified_rating",
+      "key": "key_qualified_rating",
+      "traits": {
+        "rating": 2.1
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "qualified_ratings_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "GREATER_THAN_INCLUSIVE",
+                "property": "rating",
+                "value": "2.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "qualified_ratings_segment"
+      }
+    ]
+  }
+}

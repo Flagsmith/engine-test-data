@@ -1,0 +1,46 @@
+{
+  // Given: A segment with an EQUAL condition checking if name equals "bar"
+  // When: An evaluation context with an identity that has name "bar"
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "name": "bar"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "test_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "name",
+                "value": "bar"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "test_segment"
+      }
+    ]
+  }
+}

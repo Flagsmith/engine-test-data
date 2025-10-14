@@ -4,10 +4,10 @@
   // Then: The context should be considered part of the segment because paths that lead to non-primitive values are treated as not set
   //
   // NOTE: This is a regression test for a bug where paths that lead to non-primitive values were evaluated against comparison operators
-  // (EQUAL, NOT_EQUAL, etc) instead of being treated as not set, causing undefined behavior.
-  // There's a potential use case for the `IS_SET`/`IS_NOT_SET` operators to check for the existence of an object, but it's not currently implemented.
-  // If such a use case arises, we can consider adding support for it. 
-  // For now, the engine implementations are expected to treat paths that lead to non-primitive values as not set.
+  //       (EQUAL, NOT_EQUAL, etc) instead of being treated as not set, causing undefined behavior.
+  //       There's a potential use case for the `IS_SET`/`IS_NOT_SET` operators to check for the existence of an object, but it's not currently implemented.
+  //       If such a use case arises, we can consider adding support for it. 
+  //       For now, the engine implementations are expected to treat paths that lead to non-primitive values as not set.
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {

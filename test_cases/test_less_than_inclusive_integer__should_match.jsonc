@@ -1,0 +1,46 @@
+{
+  // Given: A segment for young users with a LESS_THAN_INCLUSIVE condition checking if age <= 25
+  // When: An evaluation context with an identity that has age 22 (less than threshold)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "young_user",
+      "key": "key_young_user",
+      "traits": {
+        "age": 22
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "young_users_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "LESS_THAN_INCLUSIVE",
+                "property": "age",
+                "value": "25"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "young_users_segment"
+      }
+    ]
+  }
+}

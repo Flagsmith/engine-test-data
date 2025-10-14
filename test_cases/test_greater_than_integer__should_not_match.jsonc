@@ -1,0 +1,41 @@
+{
+  // Given: A segment with a GREATER_THAN condition checking if score is greater than "1"
+  // When: An evaluation context with an identity that has score 1 (integer, equal value)
+  // Then: The context should not be considered part of the segment since 1 is not > 1
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "score": 1
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "test_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "GREATER_THAN",
+                "property": "score",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

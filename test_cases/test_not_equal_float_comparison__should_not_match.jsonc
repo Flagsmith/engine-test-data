@@ -1,0 +1,46 @@
+{
+  // Given: A segment for non-standard versions with a NOT_EQUAL condition checking if version != "1.23"
+  // When: An evaluation context with an identity that has version 4.56 (float, different value)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "custom_version_user",
+      "key": "key_custom_version_user",
+      "traits": {
+        "version": 4.56
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "non_standard_versions_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "NOT_EQUAL",
+                "property": "version",
+                "value": "1.23"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "non_standard_versions_segment"
+      }
+    ]
+  }
+}

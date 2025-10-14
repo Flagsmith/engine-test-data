@@ -1,0 +1,49 @@
+{
+  // Given: A segment for active users with an EQUAL condition checking if is_active equals "1"
+  // When: An evaluation context with an identity that has is_active true (boolean)
+  // Then: The context should be considered part of the segment
+  //
+  // NOTE: We're maintaining historical engine behaviour which coerces segment condition value
+  //       to match the type of the identity trait value.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "active_user",
+      "key": "key_active_user",
+      "traits": {
+        "is_active": true
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "active_users_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "is_active",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "key": "1",
+        "name": "active_users_segment"
+      }
+    ]
+  }
+}
