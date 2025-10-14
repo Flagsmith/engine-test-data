@@ -1,8 +1,8 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   // Given: A segment for non-standard versions with a NOT_EQUAL condition checking if version != "1.23"
   // When: An evaluation context with an identity that has version 4.56 (float, different value)
   // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",
