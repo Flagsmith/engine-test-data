@@ -17,7 +17,7 @@
         "enabled": true,
         "feature_key": "15062",
         "key": "78986",
-        "name": "mv_feature",
+        "name": "multivariate_feature",
         "value": "foo",
         "variants": [
           {
