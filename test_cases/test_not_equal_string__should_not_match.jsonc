@@ -1,18 +1,18 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   // Given: A segment for non-premium users with a NOT_EQUAL condition checking if status != "premium"
-  // When: An evaluation context with an identity that has status "basic" (different value)
-  // Then: The context should be considered part of the segment
+  // When: An evaluation context with an identity that has status "premium" (same value)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",
       "name": "Environment"
     },
     "identity": {
-      "identifier": "basic_user",
-      "key": "key_basic_user",
+      "identifier": "premium_user",
+      "key": "key_premium_user",
       "traits": {
-        "status": "basic"
+        "status": "premium"
       }
     },
     "segments": {
@@ -36,11 +36,6 @@
   },
   "result": {
     "flags": {},
-    "segments": [
-      {
-        "key": "1",
-        "name": "non_premium_users_segment"
-      }
-    ]
+    "segments": []
   }
 }
