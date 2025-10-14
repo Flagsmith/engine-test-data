@@ -37,22 +37,22 @@
           {
             "value": "bar",
             "weight": 30,
-            "priority": 1
+            "priority": 3402
           },
           {
             "value": "baz",
             "weight": 30,
-            "priority": 0
+            "priority": 3404
           },
           {
             "value": 1,
             "weight": 0,
-            "priority": 2
+            "priority": 3405
           },
           {
             "value": true,
             "weight": 0,
-            "priority": 3
+            "priority": 3406
           }
         ]
       },
