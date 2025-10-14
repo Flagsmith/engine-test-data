@@ -36,19 +36,23 @@
         "variants": [
           {
             "value": "bar",
-            "weight": 30
+            "weight": 30,
+            "priority": 0
           },
           {
             "value": "baz",
-            "weight": 30
+            "weight": 30,
+            "priority": 1
           },
           {
             "value": 1,
-            "weight": 0
+            "weight": 0,
+            "priority": 2
           },
           {
             "value": true,
-            "weight": 0
+            "weight": 0,
+            "priority": 3
           }
         ]
       },
