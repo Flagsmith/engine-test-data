@@ -22,12 +22,12 @@
         "variants": [
           {
             "value": "option_a",
-            "weight": 30,
+            "weight": 50,
             "priority": 20
           },
           {
             "value": "option_b",
-            "weight": 30,
+            "weight": 50,
             "priority": 10
           }
         ]
@@ -41,7 +41,7 @@
         "enabled": true,
         "feature_key": "15062",
         "name": "multivariate_feature",
-        "reason": "SPLIT; weight=30",
+        "reason": "SPLIT; weight=50",
         "value": "option_b"
       }
     },
