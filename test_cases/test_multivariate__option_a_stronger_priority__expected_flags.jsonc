@@ -1,4 +1,7 @@
 {
+  // Given: A multivariate feature with two variants of equal weight, where option_a has a stronger priority (lower priority number)
+  // When: Evaluating the feature for the given identity
+  // Then: The variant with stronger priority (option_a) should be selected as the feature value
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
