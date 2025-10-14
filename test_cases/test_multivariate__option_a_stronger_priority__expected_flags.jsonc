@@ -1,5 +1,6 @@
 {
-  // Given: A multivariate feature with two variants of equal weight, where option_a has a stronger priority (lower priority number)
+  // Given: A multivariate feature with two variants of equal weight, where option_b has a stronger priority (lower priority number)
+  //        and an identity resulting in 49.27% percentage allocation
   // When: Evaluating the feature for the given identity
   // Then: The variant with stronger priority (option_a) should be selected as the feature value
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
