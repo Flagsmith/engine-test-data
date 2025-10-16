@@ -63,7 +63,7 @@
         "enabled": false,
         "feature_key": "12345",
         "name": "feature_with_metadata",
-        "reason": "DEFAULT",
+        "reason": "TARGETING_MATCH; segment=segment",
         "value": "overridden",
         "metadata": {
           "source": "overridden"
