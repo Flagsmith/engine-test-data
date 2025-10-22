@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "21",
         "name": "segment_json_array_status"
       }
     ]

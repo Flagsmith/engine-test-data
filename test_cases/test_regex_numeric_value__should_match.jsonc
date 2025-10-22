@@ -59,7 +59,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "78",
         "name": "segment_regex_numeric_type"
       }
     ]

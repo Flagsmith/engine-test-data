@@ -41,7 +41,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "1",
         "name": "active_users_segment"
       }
     ]

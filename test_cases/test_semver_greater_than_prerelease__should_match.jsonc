@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "46",
         "name": "segment_version_release_vs_beta"
       }
     ]

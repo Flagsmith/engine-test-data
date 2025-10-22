@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "50",
         "name": "segment_version_less_than_newer"
       }
     ]

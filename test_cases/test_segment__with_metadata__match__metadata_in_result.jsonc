@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "422",
         "name": "segment_with_metadata",
         "metadata": {
           "source": "imported"

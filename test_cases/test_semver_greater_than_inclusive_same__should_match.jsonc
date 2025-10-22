@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "56",
         "name": "segment_version_gte_same"
       }
     ]

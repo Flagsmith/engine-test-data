@@ -43,7 +43,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "25",
         "name": "segment_array_value_condition"
       }
     ]

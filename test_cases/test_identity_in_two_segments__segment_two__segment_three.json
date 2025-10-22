@@ -319,11 +319,9 @@
     },
     "segments": [
       {
-        "key": "16",
         "name": "segment_two"
       },
       {
-        "key": "17",
         "name": "segment_three"
       }
     ]

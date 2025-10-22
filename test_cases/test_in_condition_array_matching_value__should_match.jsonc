@@ -42,7 +42,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "12",
         "name": "segment_valued_customers"
       }
     ]

@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "49",
         "name": "segment_version_complex_semver"
       }
     ]

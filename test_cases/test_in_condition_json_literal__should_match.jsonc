@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "26",
         "name": "segment_json_literal_condition"
       }
     ]

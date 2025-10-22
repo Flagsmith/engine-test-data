@@ -41,7 +41,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "99",
         "name": "segment_pointing_to_object"
       }
     ]
