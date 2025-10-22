@@ -1,0 +1,41 @@
+{
+  // Given: A segment with IN condition using comma-separated string values, including string representations of boolean true
+  // When: An evaluation context with an identity that has a boolean true trait value
+  // Then: The context should not be considered part of the segment since boolean true doesn't match string values
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "none_trait_user",
+      "key": "key_none_trait_user",
+      "traits": {
+        "status": true
+      }
+    },
+    "segments": {
+      "24": {
+        "key": "24",
+        "name": "segment_string_values_with_boolean_trait",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "status",
+                "value": "foo,true,True,1,bar"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
