@@ -16,7 +16,9 @@
     "features": {
       "multivariate_feature": {
         "enabled": true,
-        "feature_key": "15062",
+        "metadata": {
+        "id": 15062
+      },
         "key": "78986",
         "name": "multivariate_feature",
         "value": "foo",
@@ -40,7 +42,9 @@
     "flags": {
       "multivariate_feature": {
         "enabled": true,
-        "feature_key": "15062",
+        "metadata": {
+        "id": 15062
+      },
         "name": "multivariate_feature",
         "reason": "SPLIT; weight=50",
         "value": "option_b"

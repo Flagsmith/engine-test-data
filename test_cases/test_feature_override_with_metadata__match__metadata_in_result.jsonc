@@ -16,11 +16,11 @@
     "features": {
       "feature_with_metadata": {
         "enabled": true,
-        "feature_key": "12345",
         "key": "1",
         "name": "feature_with_metadata",
         "value": null,
         "metadata": {
+          "id": 12345,
           "source": "imported"
         }
       }
@@ -44,12 +44,12 @@
         "overrides": [
           {
             "enabled": false,
-            "feature_key": "12345",
             "feature": "feature_with_metadata",
             "key": "1",
             "name": "feature_with_metadata",
             "value": "overridden",
             "metadata": {
+              "id": 12345,
               "source": "overridden"
             }
           }
@@ -61,11 +61,11 @@
     "flags": {
       "feature_with_metadata": {
         "enabled": false,
-        "feature_key": "12345",
         "name": "feature_with_metadata",
         "reason": "TARGETING_MATCH; segment=segment",
         "value": "overridden",
         "metadata": {
+          "id": 12345,
           "source": "overridden"
         }
       }
