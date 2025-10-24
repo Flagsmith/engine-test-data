@@ -1,0 +1,43 @@
+{
+  // Given: A multivariate feature with one variant and an identity key resulting in xx percentage allocation
+  // When: Evaluating the feature for the given identity
+  // Then: The variant should be selected as the feature value
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "test_env",
+      "name": "Test Environment"
+    },
+    "identity": {
+      "identifier": "foobar",
+      "key": "test_env_foobar"
+    },
+    "features": {
+      "multivariate_feature": {
+        "enabled": true,
+        "key": "78986",
+        "name": "multivariate_feature",
+        "value": "foo",
+        "variants": [
+          {
+            "value": "variant_value",
+            "weight": 26,
+            "priority": 1
+          }
+        ]
+      }
+    },
+    "segments": {}
+  },
+  "result": {
+    "flags": {
+      "multivariate_feature": {
+        "enabled": true,
+        "name": "multivariate_feature",
+        "reason": "SPLIT; weight=26",
+        "value": "variant_value"
+      }
+    },
+    "segments": []
+  }
+}
