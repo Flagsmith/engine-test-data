@@ -2,7 +2,11 @@
   // Given: A multivariate feature with one variant and an identity identifier
   //        expected to produce an identity key resulting in %54.53 allocation
   // When: Evaluating the feature for the given identity
-  // Then: The variant should be selected as the feature value
+  // Then: The variant should be selected as the feature value.
+  //
+  // NOTE: The expectation is that the engine constructs the identity key internally
+  //       using the environment key and identity identifier. In this case, we expect
+  //       the constructed key to be "test_env_foobar" which results in 54.53% allocation.
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
