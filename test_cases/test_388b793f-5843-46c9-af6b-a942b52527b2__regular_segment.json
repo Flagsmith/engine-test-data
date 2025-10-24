@@ -8,28 +8,28 @@
     "features": {
       "basic_flag": {
         "enabled": false,
-        "feature_key": "15060",
+        "metadata": {"id": 15060},
         "key": "78982",
         "name": "basic_flag",
         "value": ""
       },
       "float_feature": {
         "enabled": true,
-        "feature_key": "15061",
+        "metadata": {"id": 15061},
         "key": "78984",
         "name": "float_feature",
         "value": "12.34"
       },
       "integer_feature": {
         "enabled": true,
-        "feature_key": "15059",
+        "metadata": {"id": 15059},
         "key": "78980",
         "name": "integer_feature",
         "value": 1234
       },
       "mv_feature": {
         "enabled": true,
-        "feature_key": "15062",
+        "metadata": {"id": 15062},
         "key": "78986",
         "name": "mv_feature",
         "value": "foo",
@@ -58,7 +58,7 @@
       },
       "string_feature": {
         "enabled": true,
-        "feature_key": "15058",
+        "metadata": {"id": 15058},
         "key": "78978",
         "name": "string_feature",
         "value": "foo"
@@ -79,7 +79,7 @@
         "overrides": [
           {
             "enabled": true,
-            "feature_key": "15058",
+            "metadata": {"id": 15058},
             "key": "78978",
             "name": "string_feature",
             "priority": 0,
@@ -117,7 +117,7 @@
         "overrides": [
           {
             "enabled": true,
-            "feature_key": "15058",
+            "metadata": {"id": 15058},
             "key": "78977",
             "name": "string_feature",
             "priority": 1,
@@ -155,7 +155,7 @@
         "overrides": [
           {
             "enabled": true,
-            "feature_key": "15058",
+            "metadata": {"id": 15058},
             "key": "81027",
             "name": "string_feature",
             "value": "context_values"
@@ -192,7 +192,7 @@
         "overrides": [
           {
             "enabled": false,
-            "feature_key": "15058",
+            "metadata": {"id": 15058},
             "key": "81027",
             "name": "string_feature",
             "value": "segment_override"
@@ -251,7 +251,7 @@
         "overrides": [
           {
             "enabled": true,
-            "feature_key": "15060",
+            "metadata": {"id": 15060},
             "key": "81026",
             "name": "basic_flag",
             "value": ""
@@ -283,35 +283,35 @@
     "flags": {
       "basic_flag": {
         "enabled": false,
-        "feature_key": "15060",
+        "metadata": {"id": 15060},
         "name": "basic_flag",
         "reason": "DEFAULT",
         "value": ""
       },
       "float_feature": {
         "enabled": true,
-        "feature_key": "15061",
+        "metadata": {"id": 15061},
         "name": "float_feature",
         "reason": "DEFAULT",
         "value": "12.34"
       },
       "integer_feature": {
         "enabled": true,
-        "feature_key": "15059",
+        "metadata": {"id": 15059},
         "name": "integer_feature",
         "reason": "DEFAULT",
         "value": 1234
       },
       "mv_feature": {
         "enabled": true,
-        "feature_key": "15062",
+        "metadata": {"id": 15062},
         "name": "mv_feature",
         "reason": "SPLIT; weight=30",
         "value": "bar"
       },
       "string_feature": {
         "enabled": false,
-        "feature_key": "15058",
+        "metadata": {"id": 15058},
         "name": "string_feature",
         "reason": "TARGETING_MATCH; segment=regular_segment",
         "value": "segment_override"
@@ -319,7 +319,6 @@
     },
     "segments": [
       {
-        "key": "4267",
         "name": "regular_segment"
       }
     ]

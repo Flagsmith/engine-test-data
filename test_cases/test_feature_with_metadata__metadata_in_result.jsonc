@@ -11,7 +11,6 @@
     "features": {
       "feature_with_metadata": {
         "enabled": true,
-        "feature_key": "12345",
         "key": "1",
         "name": "feature_with_metadata",
         "value": null,
@@ -25,7 +24,6 @@
     "flags": {
       "feature_with_metadata": {
         "enabled": true,
-        "feature_key": "12345",
         "name": "feature_with_metadata",
         "reason": "DEFAULT",
         "value": null,

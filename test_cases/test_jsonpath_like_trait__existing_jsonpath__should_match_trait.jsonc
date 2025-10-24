@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "99",
         "name": "segment_jsonpath_like_trait__existing_jsonpath"
       }
     ]

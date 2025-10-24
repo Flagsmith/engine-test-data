@@ -38,7 +38,6 @@
     "flags": {},
     "segments": [
       {
-        "key": "61",
         "name": "segment_modulo_float_match"
       }
     ]
