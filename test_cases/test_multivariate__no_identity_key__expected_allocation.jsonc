@@ -21,7 +21,7 @@
         "variants": [
           {
             "value": "variant_value",
-            "weight": 26,
+            "weight": 54.54,
             "priority": 1
           }
         ]
@@ -34,7 +34,7 @@
       "multivariate_feature": {
         "enabled": true,
         "name": "multivariate_feature",
-        "reason": "SPLIT; weight=26",
+        "reason": "SPLIT; weight=54.54",
         "value": "variant_value"
       }
     },
