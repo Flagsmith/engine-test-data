@@ -1,5 +1,5 @@
 {
-  // Given: A multivariate feature with one variant and an identity key resulting in %54.53 percentage allocation
+  // Given: A multivariate feature with one variant and an identity key resulting in %54.53 allocation
   // When: Evaluating the feature for the given identity
   // Then: The variant should be selected as the feature value
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
