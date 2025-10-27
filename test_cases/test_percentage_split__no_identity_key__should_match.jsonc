@@ -1,0 +1,48 @@
+{
+  // Given: A multivariate feature with one variant and an identity identifier
+  //        expected to produce an identity key resulting in %54.53 allocation
+  //        and a % split segment on `$.identity.key` with %55 threshold
+  // When: Evaluating the feature for the given identity
+  // Then: The context should be considered part of the segment
+  //
+  // NOTE: The expectation is that the engine constructs the identity key internally
+  //       using the environment key and identity identifier. In this case, we expect
+  //       the constructed key to be "test_env_foobar" which results in 54.53% allocation.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "test_env",
+      "name": "Test Environment"
+    },
+    "identity": {
+      "identifier": "foobar"
+    },
+    "features": {},
+    "segments": {
+      "12345": {
+        "key": "12345",
+        "name": "percentage_split_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "PERCENTAGE_SPLIT",
+                "property": "$.identity.key",
+                "value": "55"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "result": {
+      "flags": {},
+      "segments": [
+        {
+          "name": "percentage_split_segment"
+        }
+      ]
+    }
+  }
+}
