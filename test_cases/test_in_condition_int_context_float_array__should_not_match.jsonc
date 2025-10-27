@@ -1,0 +1,46 @@
+{
+  // Given: A segment with IN condition using an array of floats
+  // When: An evaluation context with an identity that has an integer trait that does not match any of the float array values
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "int_float_array_user",
+      "key": "key_int_float_array_user",
+      "traits": {
+        "level": 2
+      }
+    },
+    "segments": {
+      "33": {
+        "key": "33",
+        "name": "segment_int_float_array_mismatch",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "level",
+                "value": [
+                  1.5,
+                  2.5,
+                  3.5,
+                  4.5
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
