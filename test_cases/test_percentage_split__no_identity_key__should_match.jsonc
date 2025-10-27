@@ -36,13 +36,13 @@
         ]
       }
     },
-    "result": {
-      "flags": {},
-      "segments": [
-        {
-          "name": "percentage_split_segment"
-        }
-      ]
-    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "percentage_split_segment"
+      }
+    ]
   }
 }
