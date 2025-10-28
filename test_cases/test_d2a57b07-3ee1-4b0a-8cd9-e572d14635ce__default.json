@@ -66,7 +66,7 @@
     },
     "identity": {
       "identifier": "d2a57b07-3ee1-4b0a-8cd9-e572d14635ce",
-      "key": 32103792,
+      "key": "32103792",
       "traits": {
         "age": 90,
         "favourite_colour": "green"
