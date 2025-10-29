@@ -15,12 +15,12 @@
         "key": "1016365",
         "name": "mv_feature",
         "enabled": false,
-        "value": null,
+        "value": "env-control-value",
         "variants": [
           {
             "priority": 191505,
-            "value": "from-env",
-            "weight": 50.0
+            "value": "50-allocation",
+            "weight": 50
           }
         ]
       }
@@ -53,12 +53,12 @@
             "key": "1016366",
             "name": "mv_feature",
             "enabled": true,
-            "value": "not-from-env",
+            "value": "segment-control-value",
             "variants": [
               {
                 "priority": 191506,
-                "value": "from-env",
-                "weight": 50.0
+                "value": "50-allocation",
+                "weight": 50
               }
             ],
             "priority": 0
@@ -72,8 +72,8 @@
       "mv_feature": {
         "name": "mv_feature",
         "enabled": true,
-        "value": "from-env",
-        "reason": "DEFAULT"
+        "value": "50-allocation",
+        "reason": "SPLIT; weight=50"
       }
     },
     "segments": [
