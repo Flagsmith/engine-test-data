@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "8AYnz4q3KEfT5DFtnramnP",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "user-123",
+      "key": "8AYnz4q3KEfT5DFtnramnP_user-123",
+      "traits": {}
+    },
+    "features": {
+      "mv_feature": {
+        "key": "1016365",
+        "name": "mv_feature",
+        "enabled": false,
+        "value": null,
+        "variants": [
+          {
+            "priority": 191505,
+            "value": "from-env",
+            "weight": 50.0
+          }
+        ]
+      }
+    },
+    "segments": {
+      "713564": {
+        "key": "713564",
+        "name": "user-123",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [],
+            "rules": [
+              {
+                "type": "ANY",
+                "conditions": [
+                  {
+                    "property": "$.environment.name",
+                    "operator": "EQUAL",
+                    "value": "Production"
+                  }
+                ],
+                "rules": []
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "1016366",
+            "name": "mv_feature",
+            "enabled": true,
+            "value": "not-from-env",
+            "variants": [
+              {
+                "priority": 191506,
+                "value": "from-env",
+                "weight": 50.0
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "mv_feature": {
+        "name": "mv_feature",
+        "enabled": true,
+        "value": "from-env",
+        "reason": "DEFAULT"
+      }
+    },
+    "segments": [
+      {
+        "name": "user-123"
+      }
+    ]
+  }
+}
