@@ -1,0 +1,88 @@
+{
+  // Given: A multivariate feature with 50% allocation in both environment and segment
+  //        and an identity key resulting in 50% allocation
+  // When: Evaluating the feature for the given identity
+  // Then: The variant should be selected as the feature value from the segment override
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "8AYnz4q3KEfT5DFtnramnP",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "user-123",
+      "key": "8AYnz4q3KEfT5DFtnramnP_user-123",
+    },
+    "features": {
+      "mv_feature": {
+        "key": "1016365",
+        "name": "mv_feature",
+        "enabled": false,
+        "value": "env-control-value",
+        "variants": [
+          {
+            "priority": 191505,
+            "value": "50-allocation",
+            "weight": 50
+          }
+        ]
+      }
+    },
+    "segments": {
+      "713564": {
+        "key": "713564",
+        "name": "user-123",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [],
+            "rules": [
+              {
+                "type": "ANY",
+                "conditions": [
+                  {
+                    "property": "$.environment.name",
+                    "operator": "EQUAL",
+                    "value": "Production"
+                  }
+                ],
+                "rules": []
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "1016366",
+            "name": "mv_feature",
+            "enabled": true,
+            "value": "segment-control-value",
+            "variants": [
+              {
+                "priority": 191506,
+                "value": "50-allocation",
+                "weight": 50
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "mv_feature": {
+        "name": "mv_feature",
+        "enabled": true,
+        "value": "50-allocation",
+        "reason": "SPLIT; weight=50"
+      }
+    },
+    "segments": [
+      {
+        "name": "user-123"
+      }
+    ]
+  }
+}
