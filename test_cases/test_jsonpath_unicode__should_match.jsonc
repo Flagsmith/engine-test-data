@@ -4,8 +4,8 @@
   // Then: The context should be considered part of the segment
   //
   // This test ensures that JSONPath engines correctly parse and escape trait names with:
-  // - Unicode characters (Spanish: tamaño)
-  // - Combined unicode and special characters that have meaning in regex (Japanese: サイズ.[withdot])
+  // - Unicode characters (Spanish: tamaño, Japanese: サイズ)
+  // - Characters with special meaning to regular expressions (brackets, dots: [withdot])
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
@@ -17,7 +17,8 @@
       "key": "key_unicode_user",
       "traits": {
         "tamaño": "grande",
-        "サイズ.[withdot]": "medium"
+        "サイズ": "medium",
+        "[withdot]": "small"
       }
     },
     "segments": {
@@ -35,8 +36,13 @@
               },
               {
                 "operator": "EQUAL",
-                "property": "$.identity.traits['サイズ.[withdot]']",
+                "property": "$.identity.traits.サイズ",
                 "value": "medium"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "$.identity.traits['[withdot]']",
+                "value": "small"
               }
             ]
           }
