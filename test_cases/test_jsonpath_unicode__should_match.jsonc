@@ -1,0 +1,68 @@
+{
+  // Given: A segment with multiple EQUAL conditions using JSONPath selectors containing unicode characters and special characters
+  // When: An evaluation context with an identity that has traits matching all unicode JSONPath selectors
+  // Then: The context should be considered part of the segment
+  //
+  // This test ensures that JSONPath engines correctly parse and escape trait names with:
+  // - Unicode characters (Spanish: tamaño, Japanese: サイズ, Chinese: 尺寸)
+  // - Special characters that have meaning in regex (dots, brackets)
+  // - Combined unicode and special characters
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "unicode_user",
+      "key": "key_unicode_user",
+      "traits": {
+        "tamaño": "grande",
+        "サイズ.[withdot]": "medium",
+        "尺寸": "小",
+        "café.name": "espresso"
+      }
+    },
+    "segments": {
+      "100": {
+        "key": "100",
+        "name": "segment_unicode_jsonpath",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "tamaño",
+                "value": "grande"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "サイズ.[withdot]",
+                "value": "medium"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "尺寸",
+                "value": "小"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "café.name",
+                "value": "espresso"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "segment_unicode_jsonpath"
+      }
+    ]
+  }
+}
