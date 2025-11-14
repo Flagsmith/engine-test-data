@@ -17,7 +17,7 @@
         "key": "422",
         "name": "segment_with_metadata",
         "metadata": {
-          "source": "imported"
+          "source": "api"
         },
         "rules": [
           {
@@ -40,7 +40,7 @@
       {
         "name": "segment_with_metadata",
         "metadata": {
-          "source": "imported"
+          "source": "api"
         }
       }
     ]
