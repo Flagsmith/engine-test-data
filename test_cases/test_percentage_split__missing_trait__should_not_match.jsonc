@@ -1,0 +1,48 @@
+{
+  // Given: A PERCENTAGE_SPLIT segment condition on "company_id" trait with 50% threshold
+  //        and an identity that does NOT have the "company_id" trait
+  // When: Evaluating the segment for the given identity
+  // Then: The identity should not be included in the segment
+  //
+  // Relates to: https://github.com/Flagsmith/flagsmith-engine/issues/283
+  // Users without the specified trait should be excluded from the segment,
+  // not fall back to using the identity key.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "test_env",
+      "name": "Test Environment"
+    },
+    "identity": {
+      "identifier": "user_without_company",
+      "key": "test_env_user_without_company",
+      "traits": {
+        "email": "user@example.com",
+        "age": 25
+      }
+    },
+    "features": {},
+    "segments": {
+      "company_segment": {
+        "key": "company_segment",
+        "name": "Company Percentage Split Segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "PERCENTAGE_SPLIT",
+                "property": "company_id",
+                "value": "50"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
