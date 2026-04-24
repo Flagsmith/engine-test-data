@@ -1,0 +1,46 @@
+{
+  // Given: An IN condition whose string value starts with "[" and ends with "]"
+  //        but isn't actually valid JSON.
+  // When: An evaluation context with status = "[foo" (one of the comma-split tokens).
+  // Then: The engine should fall back to a comma-split and match.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "csv_fallback_user",
+      "key": "key_csv_fallback_user",
+      "traits": {
+        "status": "[foo"
+      }
+    },
+    "segments": {
+      "99": {
+        "key": "99",
+        "name": "segment_csv_fallback",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "status",
+                "value": "[foo,bar]"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "segment_csv_fallback"
+      }
+    ]
+  }
+}
