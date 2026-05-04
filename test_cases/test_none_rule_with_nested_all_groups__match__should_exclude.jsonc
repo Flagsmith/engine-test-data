@@ -1,6 +1,6 @@
 {
-  // Given: A segment with a NONE rule containing an ALL sub-rule group
-  // When: Identity traits match the ALL group (is_bot = true)
+  // Given: A segment with a top-level NONE rule containing an ALL sub-rule group
+  // When: Identity traits match the ALL group (is_bot = true AND tier = free)
   // Then: The segment should not match (NONE excludes matching groups)
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
@@ -22,25 +22,20 @@
         "name": "exclude_bots",
         "rules": [
           {
-            "type": "ALL",
+            "type": "NONE",
             "rules": [
               {
-                "type": "NONE",
-                "rules": [
+                "type": "ALL",
+                "conditions": [
                   {
-                    "type": "ALL",
-                    "conditions": [
-                      {
-                        "operator": "EQUAL",
-                        "property": "is_bot",
-                        "value": "true"
-                      },
-                      {
-                        "operator": "EQUAL",
-                        "property": "tier",
-                        "value": "free"
-                      }
-                    ]
+                    "operator": "EQUAL",
+                    "property": "is_bot",
+                    "value": "true"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "tier",
+                    "value": "free"
                   }
                 ]
               }

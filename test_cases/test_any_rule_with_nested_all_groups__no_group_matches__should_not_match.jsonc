@@ -1,5 +1,5 @@
 {
-  // Given: A segment with an ANY rule containing two ALL sub-rule groups
+  // Given: A segment with a top-level ANY rule containing ALL sub-rule groups
   // When: Identity traits match neither group (wrong user_id for Production)
   // Then: The segment should not match
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
@@ -21,40 +21,35 @@
         "name": "user_per_env",
         "rules": [
           {
-            "type": "ALL",
+            "type": "ANY",
             "rules": [
               {
-                "type": "ANY",
-                "rules": [
+                "type": "ALL",
+                "conditions": [
                   {
-                    "type": "ALL",
-                    "conditions": [
-                      {
-                        "operator": "EQUAL",
-                        "property": "$.environment.name",
-                        "value": "Production"
-                      },
-                      {
-                        "operator": "EQUAL",
-                        "property": "user_id",
-                        "value": "123"
-                      }
-                    ]
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "Production"
                   },
                   {
-                    "type": "ALL",
-                    "conditions": [
-                      {
-                        "operator": "EQUAL",
-                        "property": "$.environment.name",
-                        "value": "QA"
-                      },
-                      {
-                        "operator": "EQUAL",
-                        "property": "user_id",
-                        "value": "456"
-                      }
-                    ]
+                    "operator": "EQUAL",
+                    "property": "user_id",
+                    "value": "123"
+                  }
+                ]
+              },
+              {
+                "type": "ALL",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "QA"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "user_id",
+                    "value": "456"
                   }
                 ]
               }
