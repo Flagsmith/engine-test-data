@@ -1,0 +1,89 @@
+{
+  // Given: A segment with a top-level ANY rule containing ALL sub-rule groups
+  // When: Identity traits match neither group (wrong user_id for Production)
+  // Then: The segment should not match
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "user_2",
+      "key": "key_user_2",
+      "traits": {
+        "user_id": "999"
+      }
+    },
+    "segments": {
+      "100": {
+        "key": "100",
+        "name": "user_per_env",
+        "rules": [
+          {
+            "type": "ANY",
+            "rules": [
+              {
+                "type": "ALL",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "Production"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "user_id",
+                    "value": "123"
+                  }
+                ]
+              },
+              {
+                "type": "ALL",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "QA"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "user_id",
+                    "value": "456"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "1",
+            "name": "test_feature",
+            "value": "overridden"
+          }
+        ]
+      }
+    },
+    "features": {
+      "test_feature": {
+        "enabled": false,
+        "key": "1",
+        "name": "test_feature",
+        "value": "default"
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "test_feature": {
+        "enabled": false,
+        "name": "test_feature",
+        "value": "default",
+        "reason": "DEFAULT"
+      }
+    },
+    "segments": []
+  }
+}

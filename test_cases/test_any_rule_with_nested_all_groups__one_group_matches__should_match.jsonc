@@ -1,0 +1,93 @@
+{
+  // Given: A segment with a top-level ANY rule containing ALL sub-rule groups
+  // When: Identity traits match one group (Production + user 123) but not the other
+  // Then: The segment should match (ANY = OR between groups)
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "user_1",
+      "key": "key_user_1",
+      "traits": {
+        "user_id": "123"
+      }
+    },
+    "segments": {
+      "100": {
+        "key": "100",
+        "name": "user_per_env",
+        "rules": [
+          {
+            "type": "ANY",
+            "rules": [
+              {
+                "type": "ALL",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "Production"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "user_id",
+                    "value": "123"
+                  }
+                ]
+              },
+              {
+                "type": "ALL",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.environment.name",
+                    "value": "QA"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "user_id",
+                    "value": "456"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "1",
+            "name": "test_feature",
+            "value": "overridden"
+          }
+        ]
+      }
+    },
+    "features": {
+      "test_feature": {
+        "enabled": false,
+        "key": "1",
+        "name": "test_feature",
+        "value": "default"
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "test_feature": {
+        "enabled": true,
+        "name": "test_feature",
+        "value": "overridden",
+        "reason": "TARGETING_MATCH; segment=user_per_env"
+      }
+    },
+    "segments": [
+      {
+        "name": "user_per_env"
+      }
+    ]
+  }
+}
