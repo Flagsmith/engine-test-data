@@ -1,0 +1,75 @@
+{
+  // Given: A segment with a top-level NONE rule containing an ALL sub-rule group
+  // When: Identity traits match the ALL group (is_bot = true AND tier = free)
+  // Then: The segment should not match (NONE excludes matching groups)
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "bot_user",
+      "key": "key_bot_user",
+      "traits": {
+        "is_bot": "true",
+        "tier": "free"
+      }
+    },
+    "segments": {
+      "200": {
+        "key": "200",
+        "name": "exclude_bots",
+        "rules": [
+          {
+            "type": "NONE",
+            "rules": [
+              {
+                "type": "ALL",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "is_bot",
+                    "value": "true"
+                  },
+                  {
+                    "operator": "EQUAL",
+                    "property": "tier",
+                    "value": "free"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "1",
+            "name": "test_feature",
+            "value": "overridden"
+          }
+        ]
+      }
+    },
+    "features": {
+      "test_feature": {
+        "enabled": false,
+        "key": "1",
+        "name": "test_feature",
+        "value": "default"
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "test_feature": {
+        "enabled": false,
+        "name": "test_feature",
+        "value": "default",
+        "reason": "DEFAULT"
+      }
+    },
+    "segments": []
+  }
+}
