@@ -26,11 +26,7 @@
               {
                 "operator": "IN",
                 "property": "status",
-                "value": [
-                  "active",
-                  "premium",
-                  "vip"
-                ]
+                "value": ["active", "premium", "vip"]
               }
             ]
           }
