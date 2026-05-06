@@ -1,0 +1,45 @@
+{
+  // Given: A segment with IN condition using comma-delimited integers
+  // When: An evaluation context with an identity that has an integer trait matching one of the comma-delimited integer values
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "int_comma_delim_user",
+      "key": "key_int_comma_delim_user",
+      "traits": {
+        "level": 2
+      }
+    },
+    "segments": {
+      "35": {
+        "key": "35",
+        "name": "segment_int_comma_delimited",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "level",
+                "value": "1,2,3,4"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "segment_int_comma_delimited"
+      }
+    ]
+  }
+}
