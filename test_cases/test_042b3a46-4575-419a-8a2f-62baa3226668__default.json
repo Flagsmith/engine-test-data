@@ -3,7 +3,7 @@
   "context": {
     "environment": {
       "key": "n9fbf9h3v4fFgH3U3ngWhb",
-      "name": "Test Environment"
+      "name": "Test Environment 2"
     },
     "features": {
       "basic_flag": {
@@ -320,5 +320,3 @@
     "segments": []
   }
 }
-
-
