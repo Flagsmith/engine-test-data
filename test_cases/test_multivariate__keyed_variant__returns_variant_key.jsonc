@@ -1,0 +1,59 @@
+// A multivariate feature whose variants carry stable keys: the identity is
+// bucketed into a named variant, so its key is returned as `variant`.
+{
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "n9fbf9h3v4fFgH3U3ngWhb",
+      "name": "Test Environment"
+    },
+    "identity": {
+      "identifier": "0cfd0d72-4de4-4ed7-9cfb-d80dc3dacead",
+      "key": "32103813",
+      "traits": {
+        "age": 47,
+        "favourite_colour": "green"
+      }
+    },
+    "features": {
+      "mv_feature": {
+        "enabled": true,
+        "metadata": {
+          "id": 15062
+        },
+        "key": "78986",
+        "name": "mv_feature",
+        "value": "control_value",
+        "variants": [
+          {
+            "key": "variant_bar",
+            "value": "bar",
+            "weight": 30,
+            "priority": 3402
+          },
+          {
+            "key": "variant_baz",
+            "value": "baz",
+            "weight": 30,
+            "priority": 3404
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "mv_feature": {
+        "enabled": true,
+        "name": "mv_feature",
+        "reason": "SPLIT; weight=30",
+        "value": "baz",
+        "variant": "variant_baz",
+        "metadata": {
+          "id": 15062
+        }
+      }
+    },
+    "segments": []
+  }
+}
