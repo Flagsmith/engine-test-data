@@ -81,7 +81,8 @@
         "enabled": true,
         "name": "test_feature",
         "value": "overridden",
-        "reason": "TARGETING_MATCH; segment=user_per_env"
+        "reason": "TARGETING_MATCH; segment=user_per_env",
+        "variant": null
       }
     },
     "segments": [

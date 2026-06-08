@@ -67,7 +67,8 @@
         "metadata": {
           "id": 12345,
           "source": "overridden"
-        }
+        },
+        "variant": null
       }
     },
     "segments": [
