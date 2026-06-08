@@ -35,7 +35,8 @@
         "enabled": true,
         "name": "multivariate_feature",
         "reason": "SPLIT; weight=54.54",
-        "value": "variant_value"
+        "value": "variant_value",
+        "variant": null
       }
     },
     "segments": []

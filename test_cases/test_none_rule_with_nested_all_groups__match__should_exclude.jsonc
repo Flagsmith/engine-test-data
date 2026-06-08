@@ -67,7 +67,8 @@
         "enabled": false,
         "name": "test_feature",
         "value": "default",
-        "reason": "DEFAULT"
+        "reason": "DEFAULT",
+        "variant": null
       }
     },
     "segments": []

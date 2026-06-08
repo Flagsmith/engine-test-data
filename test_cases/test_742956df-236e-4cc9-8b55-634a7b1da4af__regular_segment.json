@@ -286,35 +286,40 @@
         "metadata": {"id": 15060},
         "name": "basic_flag",
         "reason": "DEFAULT",
-        "value": ""
+        "value": "",
+        "variant": null
       },
       "float_feature": {
         "enabled": true,
         "metadata": {"id": 15061},
         "name": "float_feature",
         "reason": "DEFAULT",
-        "value": "12.34"
+        "value": "12.34",
+        "variant": null
       },
       "integer_feature": {
         "enabled": true,
         "metadata": {"id": 15059},
         "name": "integer_feature",
         "reason": "DEFAULT",
-        "value": 1234
+        "value": 1234,
+        "variant": null
       },
       "mv_feature": {
         "enabled": true,
         "metadata": {"id": 15062},
         "name": "mv_feature",
         "reason": "DEFAULT",
-        "value": "foo"
+        "value": "foo",
+        "variant": "control"
       },
       "string_feature": {
         "enabled": false,
         "metadata": {"id": 15058},
         "name": "string_feature",
         "reason": "TARGETING_MATCH; segment=regular_segment",
-        "value": "segment_override"
+        "value": "segment_override",
+        "variant": null
       }
     },
     "segments": [

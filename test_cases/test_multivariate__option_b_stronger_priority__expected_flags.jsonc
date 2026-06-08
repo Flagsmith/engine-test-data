@@ -47,7 +47,8 @@
         },
         "name": "multivariate_feature",
         "reason": "SPLIT; weight=50",
-        "value": "option_b"
+        "value": "option_b",
+        "variant": null
       }
     },
     "segments": []

@@ -76,7 +76,8 @@
         "name": "mv_feature",
         "enabled": true,
         "value": "50-allocation",
-        "reason": "SPLIT; weight=50"
+        "reason": "SPLIT; weight=50",
+        "variant": null
       }
     },
     "segments": [
