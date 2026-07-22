@@ -1,0 +1,57 @@
+{
+  // Given: A segment whose top-level rule is of type ANY, holding two conditions
+  //        directly (no nested rules): role EQUAL "admin" and tier EQUAL "gold"
+  // When: An evaluation context with an identity that has role "user" (fails the
+  //       first condition) and tier "gold" (satisfies the second condition)
+  // Then: The context should be considered part of the segment, because a top-level
+  //       ANY rule matches when at least one of its conditions matches.
+  //
+  // NOTE: This guards against implementations that only support ALL at the top level,
+  //       which would incorrectly fail to match here since role != "admin".
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "role": "user",
+        "tier": "gold"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "test_segment",
+        "rules": [
+          {
+            "type": "ANY",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "role",
+                "value": "admin"
+              },
+              {
+                "operator": "EQUAL",
+                "property": "tier",
+                "value": "gold"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "test_segment"
+      }
+    ]
+  }
+}
