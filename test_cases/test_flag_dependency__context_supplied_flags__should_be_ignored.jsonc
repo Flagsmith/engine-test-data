@@ -1,0 +1,87 @@
+{
+  // Given: A context arriving with `$.flags` already populated, claiming that
+  //        `prerequisite` is enabled, while the feature itself is disabled
+  // When: The context is evaluated
+  // Then: The supplied flags are discarded and `prerequisite` is evaluated from
+  //       its feature context, so the dependency is not satisfied
+  //
+  // NOTE: `$.flags` is marked read-only in the context schema: it is populated
+  //       by the engine as evaluation progresses. In remote and edge evaluation
+  //       the context comes from the client, so an implementation that trusts a
+  //       supplied `$.flags` would let a client satisfy its own dependencies.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "enabled": false,
+        "key": "1",
+        "name": "prerequisite",
+        "value": null
+      },
+      "dependent": {
+        "enabled": false,
+        "key": "2",
+        "name": "dependent",
+        "value": "off"
+      }
+    },
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "SUPPLIED_BY_CLIENT",
+        "value": null,
+        "variant": null
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_prerequisite",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "2",
+            "name": "dependent",
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": false,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": false,
+        "name": "dependent",
+        "reason": "DEFAULT",
+        "value": "off",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}

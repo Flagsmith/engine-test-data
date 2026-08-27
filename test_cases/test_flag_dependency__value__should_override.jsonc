@@ -1,0 +1,76 @@
+{
+  // Given: A segment overriding `dependent`, conditioned on the *value* of
+  //        another feature rather than on whether it is enabled
+  // When: A context is evaluated in which `prerequisite` has the value "blue"
+  // Then: The dependency is satisfied, so `dependent` takes the override
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "enabled": true,
+        "key": "1",
+        "name": "prerequisite",
+        "value": "blue"
+      },
+      "dependent": {
+        "enabled": false,
+        "key": "2",
+        "name": "dependent",
+        "value": null
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_value",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.value",
+                "value": "blue"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "2",
+            "name": "dependent",
+            "value": null
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": "blue",
+        "variant": null
+      },
+      "dependent": {
+        "enabled": true,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=dependency_on_value",
+        "value": null,
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependency_on_value"
+      }
+    ]
+  }
+}

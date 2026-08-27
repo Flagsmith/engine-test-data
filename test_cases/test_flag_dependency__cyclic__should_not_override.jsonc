@@ -1,0 +1,103 @@
+{
+  // Given: Two features whose dependencies form a cycle — the segment
+  //        overriding `a` is conditioned on `b`, and the segment overriding
+  //        `b` is conditioned on `a`
+  // When: The context is evaluated
+  // Then: Neither override is applied, and evaluation terminates normally
+  //
+  // NOTE: Cycles are expected to be rejected where dependencies are written,
+  //       so this should be unreachable in practice. It is pinned here because
+  //       a naive resolver recurses until it exhausts the stack. Both flags
+  //       resolve to their defaults regardless of which is resolved first, so
+  //       the expected result does not depend on iteration order.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "a": {
+        "enabled": false,
+        "key": "1",
+        "name": "a",
+        "value": null
+      },
+      "b": {
+        "enabled": false,
+        "key": "2",
+        "name": "b",
+        "value": null
+      }
+    },
+    "segments": {
+      "a_on_b": {
+        "key": "a_on_b",
+        "name": "a_depends_on_b",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.b.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "1",
+            "name": "a",
+            "value": null
+          }
+        ]
+      },
+      "b_on_a": {
+        "key": "b_on_a",
+        "name": "b_depends_on_a",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.a.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "2",
+            "name": "b",
+            "value": null
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "a": {
+        "enabled": false,
+        "name": "a",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "b": {
+        "enabled": false,
+        "name": "b",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
