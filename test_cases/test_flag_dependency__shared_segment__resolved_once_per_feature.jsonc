@@ -1,0 +1,181 @@
+{
+  // Given: One segment gating two features on the same flag, and two further
+  //        segments each depending on one of those two features
+  // When: The context is evaluated with the root flag enabled
+  // Then: Both gated features and both leaves take their overrides
+  //
+  // NOTE: The shared segment is reached twice while resolving, once per
+  //       feature depending on it, and each time has to select the override
+  //       naming the feature being resolved rather than its first. A diamond
+  //       rather than a chain: `root` fans out and the two branches rejoin
+  //       only in the shared segment's verdict.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "root": {
+        "key": "1",
+        "name": "root",
+        "enabled": true,
+        "value": null
+      },
+      "shared_a": {
+        "key": "2",
+        "name": "shared_a",
+        "enabled": false,
+        "value": null
+      },
+      "shared_b": {
+        "key": "3",
+        "name": "shared_b",
+        "enabled": false,
+        "value": null
+      },
+      "leaf_of_a": {
+        "key": "4",
+        "name": "leaf_of_a",
+        "enabled": false,
+        "value": null
+      },
+      "leaf_of_b": {
+        "key": "5",
+        "name": "leaf_of_b",
+        "enabled": false,
+        "value": null
+      }
+    },
+    "segments": {
+      "shared": {
+        "key": "shared",
+        "name": "shared_dependency",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.root.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "shared_a",
+            "enabled": true,
+            "value": "a_on"
+          },
+          {
+            "key": "3",
+            "name": "shared_b",
+            "enabled": true,
+            "value": "b_on"
+          }
+        ]
+      },
+      "on_a": {
+        "key": "on_a",
+        "name": "depends_on_shared_a",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.shared_a.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "4",
+            "name": "leaf_of_a",
+            "enabled": true,
+            "value": "leaf_a_on"
+          }
+        ]
+      },
+      "on_b": {
+        "key": "on_b",
+        "name": "depends_on_shared_b",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.shared_b.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "5",
+            "name": "leaf_of_b",
+            "enabled": true,
+            "value": "leaf_b_on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "root": {
+        "enabled": true,
+        "name": "root",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "shared_a": {
+        "enabled": true,
+        "name": "shared_a",
+        "reason": "TARGETING_MATCH; segment=shared_dependency",
+        "value": "a_on",
+        "variant": null
+      },
+      "shared_b": {
+        "enabled": true,
+        "name": "shared_b",
+        "reason": "TARGETING_MATCH; segment=shared_dependency",
+        "value": "b_on",
+        "variant": null
+      },
+      "leaf_of_a": {
+        "enabled": true,
+        "name": "leaf_of_a",
+        "reason": "TARGETING_MATCH; segment=depends_on_shared_a",
+        "value": "leaf_a_on",
+        "variant": null
+      },
+      "leaf_of_b": {
+        "enabled": true,
+        "name": "leaf_of_b",
+        "reason": "TARGETING_MATCH; segment=depends_on_shared_b",
+        "value": "leaf_b_on",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "shared_dependency"
+      },
+      {
+        "name": "depends_on_shared_a"
+      },
+      {
+        "name": "depends_on_shared_b"
+      }
+    ]
+  }
+}
