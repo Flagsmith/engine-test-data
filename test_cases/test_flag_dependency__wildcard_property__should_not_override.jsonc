@@ -1,0 +1,79 @@
+{
+  // Given: A segment overriding `dependent`, conditioned on a wildcard
+  //        query over the flags mapping rather than on a single flag
+  // When: The context is evaluated with every flag disabled
+  // Then: The override is not applied
+  //
+  // NOTE: Conditions resolve to a scalar, so a query that may select more
+  //       than one node is unsupported: it yields whichever node is found
+  //       first. Every flag here is disabled, so the condition fails
+  //       whichever is selected, and whether or not an implementation
+  //       treats such a query as a dependency at all. What such a query
+  //       resolves to when flags differ is deliberately not pinned.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": false,
+        "value": null
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "wildcard_dependency",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.*.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": false,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": false,
+        "name": "dependent",
+        "reason": "DEFAULT",
+        "value": "off",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
