@@ -1,0 +1,93 @@
+{
+  // Given: A multivariate `prerequisite` with a single full-weight keyed
+  //        variant, and a segment conditioned on the variant selected
+  // When: An identity context is evaluated
+  // Then: `prerequisite` resolves to that variant, satisfying the
+  //       dependency, so `dependent` takes the override
+  //
+  // NOTE: A dependency may be conditioned on any field of a flag result,
+  //       not only `enabled`. The single 100% weight makes the bucketing
+  //       deterministic, so no assumption is made about the hashing.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "variant_user",
+      "key": "key_variant_user"
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": true,
+        "value": null,
+        "variants": [
+          {
+            "key": "treatment",
+            "value": "on",
+            "weight": 100,
+            "priority": 1
+          }
+        ]
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_variant",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.variant",
+                "value": "treatment"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "SPLIT; weight=100",
+        "value": "on",
+        "variant": "treatment"
+      },
+      "dependent": {
+        "enabled": true,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=dependency_on_variant",
+        "value": "on",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependency_on_variant"
+      }
+    ]
+  }
+}

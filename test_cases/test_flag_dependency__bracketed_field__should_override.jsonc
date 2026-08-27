@@ -1,0 +1,81 @@
+{
+  // Given: A segment overriding `dependent`, conditioned on `prerequisite`
+  //        with the *field* selected by a bracketed name rather than a dot
+  // When: The context is evaluated with `prerequisite` enabled
+  // Then: The dependency is satisfied, so `dependent` takes the override
+  //
+  // NOTE: `$.flags.prerequisite['enabled']` selects the same node as
+  //       `$.flags.prerequisite.enabled`. An implementation that matches the
+  //       property as text, rather than parsing it, is liable to miss this
+  //       spelling and leave the dependency unresolved.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": true,
+        "value": null
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_prerequisite",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite['enabled']",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": true,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=dependency_on_prerequisite",
+        "value": "on",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependency_on_prerequisite"
+      }
+    ]
+  }
+}

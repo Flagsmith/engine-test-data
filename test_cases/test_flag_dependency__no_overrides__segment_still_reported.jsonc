@@ -1,0 +1,59 @@
+{
+  // Given: A segment conditioned on a flag but overriding nothing
+  // When: The context is evaluated with the dependency satisfied
+  // Then: The segment is reported as matched
+  //
+  // NOTE: Such a segment still has to be evaluated. An implementation that
+  //       only resolves dependencies for segments carrying overrides would
+  //       report no segment membership here.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": true,
+        "value": null
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_without_overrides",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": []
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependency_without_overrides"
+      }
+    ]
+  }
+}

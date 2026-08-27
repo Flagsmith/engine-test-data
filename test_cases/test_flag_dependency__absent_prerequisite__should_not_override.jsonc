@@ -1,0 +1,61 @@
+{
+  // Given: A segment conditioned on a feature that is not in the context
+  // When: The context is evaluated
+  // Then: The override is not applied, and evaluation does not fail
+  //
+  // NOTE: A dependency on an absent feature resolves to no value, as an
+  //       unset property would. It is not an error.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_absent",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.nonexistent.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "dependent": {
+        "enabled": false,
+        "name": "dependent",
+        "reason": "DEFAULT",
+        "value": "off",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}

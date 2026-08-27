@@ -1,0 +1,112 @@
+{
+  // Given: Three features, where `c` depends on `b` and `b` depends on `a`
+  // When: The context is evaluated with `a` disabled
+  // Then: Neither `b` nor `c` takes its override
+  //
+  // NOTE: The counterpart to the cascading case. An implementation that
+  //       applies an override on a merely *present* dependency, rather than
+  //       a satisfied one, passes that case and fails this one.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "c": {
+        "key": "3",
+        "name": "c",
+        "enabled": false,
+        "value": null
+      },
+      "b": {
+        "key": "2",
+        "name": "b",
+        "enabled": false,
+        "value": null
+      },
+      "a": {
+        "key": "1",
+        "name": "a",
+        "enabled": false,
+        "value": null
+      }
+    },
+    "segments": {
+      "b_on_a": {
+        "key": "b_on_a",
+        "name": "b_depends_on_a",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.a.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "b",
+            "enabled": true,
+            "value": "b_on"
+          }
+        ]
+      },
+      "c_on_b": {
+        "key": "c_on_b",
+        "name": "c_depends_on_b",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.b.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "3",
+            "name": "c",
+            "enabled": true,
+            "value": "c_on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "a": {
+        "enabled": false,
+        "name": "a",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "b": {
+        "enabled": false,
+        "name": "b",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "c": {
+        "enabled": false,
+        "name": "c",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
