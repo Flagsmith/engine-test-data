@@ -4,7 +4,7 @@
   // When: A context is evaluated in which `prerequisite` is disabled
   // Then: The dependency is not satisfied, so `dependent` keeps its
   //       environment default and the segment does not match
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
   "context": {
     "environment": {
       "key": "key",

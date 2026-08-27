@@ -10,7 +10,7 @@
   //       a naive resolver recurses until it exhausts the stack. Both flags
   //       resolve to their defaults regardless of which is resolved first, so
   //       the expected result does not depend on iteration order.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
   "context": {
     "environment": {
       "key": "key",

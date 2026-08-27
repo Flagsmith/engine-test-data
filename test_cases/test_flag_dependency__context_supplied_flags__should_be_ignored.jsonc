@@ -9,7 +9,7 @@
   //       by the engine as evaluation progresses. In remote and edge evaluation
   //       the context comes from the client, so an implementation that trusts a
   //       supplied `$.flags` would let a client satisfy its own dependencies.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
   "context": {
     "environment": {
       "key": "key",
