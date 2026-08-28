@@ -8,8 +8,11 @@
   // NOTE: Cycles are expected to be rejected where dependencies are written,
   //       so this should be unreachable in practice. It is pinned here because
   //       a naive resolver recurses until it exhausts the stack. Both flags
-  //       resolve to their defaults regardless of which is resolved first, so
-  //       the expected result does not depend on iteration order.
+  //       serve their environment default, reported as an error rather than as
+  //       `DEFAULT` so that a flag which could not be resolved is
+  //       distinguishable from one that was never gated. Only flags in the
+  //       cycle are reported this way; a flag merely depending on one is not.
+  //       The result does not depend on which flag is resolved first.
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
   "context": {
     "environment": {
@@ -86,14 +89,14 @@
       "a": {
         "enabled": false,
         "name": "a",
-        "reason": "DEFAULT",
+        "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
         "value": null,
         "variant": null
       },
       "b": {
         "enabled": false,
         "name": "b",
-        "reason": "DEFAULT",
+        "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
         "value": null,
         "variant": null
       }
