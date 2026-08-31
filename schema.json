@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "context": {
-      "$ref": "https://raw.githubusercontent.com/Flagsmith/flagsmith/refs/heads/feat/dependent-flags-evaluation-context/sdk/evaluation-context.json"
+      "$ref": "https://raw.githubusercontent.com/Flagsmith/flagsmith/refs/heads/main/sdk/evaluation-context.json"
     },
     "result": {
       "$ref": "https://raw.githubusercontent.com/Flagsmith/flagsmith/refs/heads/main/sdk/evaluation-result.json"

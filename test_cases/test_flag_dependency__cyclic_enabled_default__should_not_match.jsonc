@@ -11,7 +11,7 @@
   //       belonging to a segment whose override was never applied. A flag
   //       resolved only by cutting a cycle must not be readable by another
   //       condition.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

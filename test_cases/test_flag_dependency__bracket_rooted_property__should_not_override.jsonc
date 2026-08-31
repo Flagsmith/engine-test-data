@@ -10,7 +10,7 @@
   //       This is deliberate, and pinned here so that an implementation
   //       using a full JSONPath parser for the prefix test does not start
   //       honouring it and diverge.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

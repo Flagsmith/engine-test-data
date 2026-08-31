@@ -6,7 +6,7 @@
   //
   // NOTE: Resolving one feature has to select the override naming that
   //       feature, not merely the first the segment carries.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

@@ -6,7 +6,7 @@
   //
   // NOTE: Dependencies have to be found in nested rules, not just top-level
   //       conditions, or the flag is read before it has been resolved.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

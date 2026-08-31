@@ -6,7 +6,7 @@
   //
   // NOTE: Feature names may contain spaces, so the quoted form has to be
   //       supported; a dotted-only implementation cannot express this.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

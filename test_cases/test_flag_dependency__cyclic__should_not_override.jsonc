@@ -13,7 +13,7 @@
   //       distinguishable from one that was never gated. Only flags in the
   //       cycle are reported this way; a flag merely depending on one is not.
   //       The result does not depend on which flag is resolved first.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

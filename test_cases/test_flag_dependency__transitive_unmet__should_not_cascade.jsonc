@@ -6,7 +6,7 @@
   // NOTE: The counterpart to the cascading case. An implementation that
   //       applies an override on a merely *present* dependency, rather than
   //       a satisfied one, passes that case and fails this one.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

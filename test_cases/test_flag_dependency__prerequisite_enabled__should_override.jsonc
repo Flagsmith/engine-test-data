@@ -8,7 +8,7 @@
   // NOTE: This requires resolving `prerequisite` before evaluating the segment.
   //       Implementations that evaluate all segments before any flag will not
   //       see a value at `$.flags.prerequisite.enabled` and so will fail here.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

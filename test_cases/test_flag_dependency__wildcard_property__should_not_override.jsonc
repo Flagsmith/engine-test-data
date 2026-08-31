@@ -10,7 +10,7 @@
   //       whichever is selected, and whether or not an implementation
   //       treats such a query as a dependency at all. What such a query
   //       resolves to when flags differ is deliberately not pinned.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

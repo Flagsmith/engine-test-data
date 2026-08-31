@@ -6,7 +6,7 @@
   // NOTE: Such a segment still has to be evaluated. An implementation that
   //       only resolves dependencies for segments carrying overrides would
   //       report no segment membership here.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

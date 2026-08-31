@@ -3,7 +3,7 @@
   //        another feature rather than on whether it is enabled
   // When: A context is evaluated in which `prerequisite` has the value "blue"
   // Then: The dependency is satisfied, so `dependent` takes the override
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

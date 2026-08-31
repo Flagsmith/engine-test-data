@@ -8,7 +8,7 @@
   //       `$.flags.prerequisite.enabled`. An implementation that matches the
   //       property as text, rather than parsing it, is liable to miss this
   //       spelling and leave the dependency unresolved.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

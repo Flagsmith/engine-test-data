@@ -7,7 +7,7 @@
   // NOTE: The declaration order is deliberately the reverse of the resolution
   //       order. Implementations that resolve flags in context order without
   //       following dependencies first will fail to enable `c`.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

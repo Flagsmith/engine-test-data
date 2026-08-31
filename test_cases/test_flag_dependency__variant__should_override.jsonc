@@ -8,7 +8,7 @@
   // NOTE: A dependency may be conditioned on any field of a flag result,
   //       not only `enabled`. The single 100% weight makes the bucketing
   //       deterministic, so no assumption is made about the hashing.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

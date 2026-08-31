@@ -9,7 +9,7 @@
   //       naming the feature being resolved rather than its first. A diamond
   //       rather than a chain: `root` fans out and the two branches rejoin
   //       only in the shared segment's verdict.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",

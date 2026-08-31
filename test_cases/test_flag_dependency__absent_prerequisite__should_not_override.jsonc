@@ -5,7 +5,7 @@
   //
   // NOTE: A dependency on an absent feature resolves to no value, as an
   //       unset property would. It is not an error.
-  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
       "key": "key",
