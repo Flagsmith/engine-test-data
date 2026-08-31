@@ -1,0 +1,104 @@
+{
+  // Given: Two features whose dependencies form a cycle, where one of them
+  //        (`b`) is enabled by its environment default
+  // When: The context is evaluated
+  // Then: Neither override is applied and neither segment matches
+  //
+  // NOTE: This is the cycle that distinguishes implementations. Cutting the
+  //       cycle leaves `b` at its default, which is *enabled* - and if that
+  //       value is then published for other conditions to read, the segment
+  //       `a_requires_b` matches on it. The result is a context reported as
+  //       belonging to a segment whose override was never applied. A flag
+  //       resolved only by cutting a cycle must not be readable by another
+  //       condition.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/heads/test/flag-dependencies/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "a": {
+        "key": "1",
+        "name": "a",
+        "enabled": false,
+        "value": "a_default"
+      },
+      "b": {
+        "key": "2",
+        "name": "b",
+        "enabled": true,
+        "value": "b_default"
+      }
+    },
+    "segments": {
+      "a_on_b": {
+        "key": "a_on_b",
+        "name": "a_requires_b",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.b.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "1",
+            "name": "a",
+            "enabled": true,
+            "value": "a_override"
+          }
+        ]
+      },
+      "b_on_a": {
+        "key": "b_on_a",
+        "name": "b_requires_a",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.a.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "b",
+            "enabled": true,
+            "value": "b_override"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "a": {
+        "enabled": false,
+        "name": "a",
+        "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
+        "value": "a_default",
+        "variant": null
+      },
+      "b": {
+        "enabled": true,
+        "name": "b",
+        "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
+        "value": "b_default",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
