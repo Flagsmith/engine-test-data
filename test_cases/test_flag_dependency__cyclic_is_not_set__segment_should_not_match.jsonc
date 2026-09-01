@@ -1,0 +1,66 @@
+{
+  // Given: A segment overriding `a`, matching when `a` is not set — a cycle,
+  //        since resolving `a` requires evaluating this segment
+  // When: The context is evaluated
+  // Then: The override is not applied and the segment does not match
+  //
+  // NOTE: `IS_NOT_SET` is the one operator that matches on a flag which could
+  //       not be resolved: every other operator fails against no value. So a
+  //       cycle can make a condition true, and the override it guards would
+  //       apply *because* the cycle was cut. A segment whose evaluation cut a
+  //       cycle read a flag that has no value, so neither its match nor its
+  //       failure to match is sound, and it must not be applied either way.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "a": {
+        "key": "1",
+        "name": "a",
+        "enabled": false,
+        "value": "a_default"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "a_requires_a_unset",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IS_NOT_SET",
+                "property": "$.flags.a.enabled",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "1",
+            "name": "a",
+            "enabled": true,
+            "value": "a_override"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "a": {
+        "enabled": false,
+        "name": "a",
+        "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
+        "value": "a_default",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
