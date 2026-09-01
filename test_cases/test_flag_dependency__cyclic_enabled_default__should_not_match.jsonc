@@ -4,13 +4,15 @@
   // When: The context is evaluated
   // Then: Neither override is applied and neither segment matches
   //
-  // NOTE: This is the cycle that distinguishes implementations. Cutting the
-  //       cycle leaves `b` at its default, which is *enabled* - and if that
-  //       value is then published for other conditions to read, the segment
-  //       `a_requires_b` matches on it. The result is a context reported as
-  //       belonging to a segment whose override was never applied. A flag
-  //       resolved only by cutting a cycle must not be readable by another
-  //       condition.
+  // NOTE: This is the cycle that distinguishes implementations. In
+  //       `cyclic__should_not_override` both flags are disabled by default, so
+  //       cutting the cycle leaves nothing truthy for the other condition to
+  //       match on and any implementation passes it. Here `b` is enabled by
+  //       default: cutting the cycle leaves that value in place, and an
+  //       implementation that publishes it for other conditions to read will
+  //       match `a_requires_b` on it — reporting a context as belonging to a
+  //       segment whose override was never applied. A flag resolved only by
+  //       cutting a cycle must not be readable by another condition.
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
