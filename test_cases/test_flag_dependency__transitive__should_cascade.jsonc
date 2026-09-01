@@ -1,0 +1,120 @@
+{
+  // Given: Three features, where `c` depends on `b` and `b` depends on `a`,
+  //        declared in the context in reverse dependency order (c, b, a)
+  // When: A context is evaluated in which `a` is enabled
+  // Then: Enabling `a` cascades, so both `b` and `c` take their overrides
+  //
+  // NOTE: The declaration order is deliberately the reverse of the resolution
+  //       order. Implementations that resolve flags in context order without
+  //       following dependencies first will fail to enable `c`.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "c": {
+        "enabled": false,
+        "key": "3",
+        "name": "c",
+        "value": null
+      },
+      "b": {
+        "enabled": false,
+        "key": "2",
+        "name": "b",
+        "value": null
+      },
+      "a": {
+        "enabled": true,
+        "key": "1",
+        "name": "a",
+        "value": null
+      }
+    },
+    "segments": {
+      "b_on_a": {
+        "key": "b_on_a",
+        "name": "b_depends_on_a",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.a.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "2",
+            "name": "b",
+            "value": "b_on"
+          }
+        ]
+      },
+      "c_on_b": {
+        "key": "c_on_b",
+        "name": "c_depends_on_b",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.b.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "3",
+            "name": "c",
+            "value": "c_on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "c": {
+        "enabled": true,
+        "name": "c",
+        "reason": "TARGETING_MATCH; segment=c_depends_on_b",
+        "value": "c_on",
+        "variant": null
+      },
+      "b": {
+        "enabled": true,
+        "name": "b",
+        "reason": "TARGETING_MATCH; segment=b_depends_on_a",
+        "value": "b_on",
+        "variant": null
+      },
+      "a": {
+        "enabled": true,
+        "name": "a",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "b_depends_on_a"
+      },
+      {
+        "name": "c_depends_on_b"
+      }
+    ]
+  }
+}

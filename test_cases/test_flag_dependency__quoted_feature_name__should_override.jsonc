@@ -1,0 +1,79 @@
+{
+  // Given: A feature whose name is not a bare JSONPath identifier, and a
+  //        segment conditioned on it using a quoted name selector
+  // When: The context is evaluated with that feature enabled
+  // Then: The dependency is satisfied, so `dependent` takes the override
+  //
+  // NOTE: Feature names may contain spaces, so the quoted form has to be
+  //       supported; a dotted-only implementation cannot express this.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "my feature": {
+        "key": "1",
+        "name": "my feature",
+        "enabled": true,
+        "value": null
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_my_feature",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags['my feature'].enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "my feature": {
+        "enabled": true,
+        "name": "my feature",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": true,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=dependency_on_my_feature",
+        "value": "on",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependency_on_my_feature"
+      }
+    ]
+  }
+}

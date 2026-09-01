@@ -1,0 +1,73 @@
+{
+  // Given: A feature `dependent`, and a segment overriding it whose only
+  //        condition is on the result of another feature, `prerequisite`
+  // When: A context is evaluated in which `prerequisite` is disabled
+  // Then: The dependency is not satisfied, so `dependent` keeps its
+  //       environment default and the segment does not match
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "enabled": false,
+        "key": "1",
+        "name": "prerequisite",
+        "value": null
+      },
+      "dependent": {
+        "enabled": false,
+        "key": "2",
+        "name": "dependent",
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_prerequisite",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "2",
+            "name": "dependent",
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": false,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": false,
+        "name": "dependent",
+        "reason": "DEFAULT",
+        "value": "off",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}

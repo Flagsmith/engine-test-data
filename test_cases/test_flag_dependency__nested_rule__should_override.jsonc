@@ -1,0 +1,98 @@
+{
+  // Given: A segment whose flag condition sits in a nested rule group,
+  //        alongside a trait condition in the top-level group
+  // When: The context is evaluated with both satisfied
+  // Then: The dependency is satisfied, so `dependent` takes the override
+  //
+  // NOTE: Dependencies have to be found in nested rules, not just top-level
+  //       conditions, or the flag is read before it has been resolved.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "nested_user",
+      "key": "key_nested_user",
+      "traits": {
+        "tier": "gold"
+      }
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": true,
+        "value": null
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_in_nested_rule",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "tier",
+                "value": "gold"
+              }
+            ],
+            "rules": [
+              {
+                "type": "ANY",
+                "conditions": [
+                  {
+                    "operator": "EQUAL",
+                    "property": "$.flags.prerequisite.enabled",
+                    "value": "true"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": true,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=dependency_in_nested_rule",
+        "value": "on",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependency_in_nested_rule"
+      }
+    ]
+  }
+}

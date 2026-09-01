@@ -1,0 +1,108 @@
+{
+  // Given: Two matching segments overriding `dependent`, both conditioned
+  //        on `prerequisite`, with different override priorities
+  // When: The context is evaluated with the dependency satisfied
+  // Then: The lower priority number wins, as for any segment override
+  //
+  // NOTE: Resolving dependencies must not disturb override precedence, and
+  //       in particular must not make it depend on resolution order.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": true,
+        "value": null
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "weak": {
+        "key": "weak",
+        "name": "weaker_dependency",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "weaker",
+            "priority": 10
+          }
+        ]
+      },
+      "strong": {
+        "key": "strong",
+        "name": "stronger_dependency",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.prerequisite.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "stronger",
+            "priority": 1
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": true,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=stronger_dependency",
+        "value": "stronger",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "weaker_dependency"
+      },
+      {
+        "name": "stronger_dependency"
+      }
+    ]
+  }
+}

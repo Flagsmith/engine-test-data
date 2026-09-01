@@ -1,0 +1,79 @@
+{
+  // Given: A segment overriding `dependent`, conditioned on a property that
+  //        is a valid JSONPath query but is rooted with a bracket
+  // When: The context is evaluated with `prerequisite` enabled
+  // Then: No override is applied, and the segment does not match
+  //
+  // NOTE: Only a property prefixed `$.` is treated as a JSONPath query. A
+  //       bracket-rooted query such as `$['flags']['prerequisite']` is a
+  //       trait key, and as no such trait is set it resolves to no value.
+  //       This is deliberate, and pinned here so that an implementation
+  //       using a full JSONPath parser for the prefix test does not start
+  //       honouring it and diverge.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "prerequisite": {
+        "key": "1",
+        "name": "prerequisite",
+        "enabled": true,
+        "value": null
+      },
+      "dependent": {
+        "key": "2",
+        "name": "dependent",
+        "enabled": false,
+        "value": "off"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependency_on_prerequisite",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$['flags']['prerequisite'].enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "2",
+            "name": "dependent",
+            "enabled": true,
+            "value": "on"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "prerequisite": {
+        "enabled": true,
+        "name": "prerequisite",
+        "reason": "DEFAULT",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": false,
+        "name": "dependent",
+        "reason": "DEFAULT",
+        "value": "off",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
