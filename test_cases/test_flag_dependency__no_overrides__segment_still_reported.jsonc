@@ -45,7 +45,7 @@
       "prerequisite": {
         "enabled": true,
         "name": "prerequisite",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": null,
         "variant": null
       }

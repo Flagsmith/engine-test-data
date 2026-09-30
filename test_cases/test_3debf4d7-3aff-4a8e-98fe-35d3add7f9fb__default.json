@@ -293,7 +293,7 @@
         "enabled": true,
         "metadata": {"id": 15061},
         "name": "float_feature",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": "12.34",
         "variant": null
       },
@@ -301,7 +301,7 @@
         "enabled": true,
         "metadata": {"id": 15059},
         "name": "integer_feature",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": 1234,
         "variant": null
       },
@@ -309,7 +309,7 @@
         "enabled": true,
         "metadata": {"id": 15062},
         "name": "mv_feature",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": "foo",
         "variant": "control"
       },

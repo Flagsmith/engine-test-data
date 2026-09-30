@@ -103,7 +103,7 @@
       "a": {
         "enabled": true,
         "name": "a",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": null,
         "variant": null
       }

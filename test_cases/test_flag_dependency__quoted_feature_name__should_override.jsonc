@@ -58,7 +58,7 @@
       "my feature": {
         "enabled": true,
         "name": "my feature",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": null,
         "variant": null
       },
