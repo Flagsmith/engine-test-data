@@ -25,7 +25,7 @@
       "feature_with_metadata": {
         "enabled": true,
         "name": "feature_with_metadata",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": null,
         "metadata": {
           "source": "imported"

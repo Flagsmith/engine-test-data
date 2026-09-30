@@ -133,7 +133,7 @@
       "root": {
         "enabled": true,
         "name": "root",
-        "reason": "DEFAULT",
+        "reason": "STATIC",
         "value": null,
         "variant": null
       },
