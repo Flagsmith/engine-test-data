@@ -1,0 +1,81 @@
+{
+  // Given: A feature `targeted` overridden by a segment, and a feature
+  //        `untargeted` that no segment overrides
+  // When: An identity that does not match the segment is evaluated
+  // Then: Both flags keep their environment defaults; `targeted` is reported
+  //       as DEFAULT (targeting rules exist but did not match), and
+  //       `untargeted` as STATIC (no targeting rules)
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "test_user",
+      "key": "key_test_user",
+      "traits": {
+        "plan": "free"
+      }
+    },
+    "features": {
+      "targeted": {
+        "enabled": false,
+        "key": "1",
+        "name": "targeted",
+        "value": "default"
+      },
+      "untargeted": {
+        "enabled": true,
+        "key": "2",
+        "name": "untargeted",
+        "value": "default"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "premium_users",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "plan",
+                "value": "premium"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": true,
+            "key": "1",
+            "name": "targeted",
+            "value": "overridden"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "targeted": {
+        "enabled": false,
+        "name": "targeted",
+        "reason": "DEFAULT",
+        "value": "default",
+        "variant": null
+      },
+      "untargeted": {
+        "enabled": true,
+        "name": "untargeted",
+        "reason": "STATIC",
+        "value": "default",
+        "variant": null
+      }
+    },
+    "segments": []
+  }
+}
