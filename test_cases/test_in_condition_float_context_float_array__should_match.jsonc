@@ -1,0 +1,50 @@
+{
+  // Given: A segment with IN condition using an array of floats
+  // When: An evaluation context with an identity that has a float trait matching one of the array values
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "float_array_user",
+      "key": "key_float_array_user",
+      "traits": {
+        "score": 2.0
+      }
+    },
+    "segments": {
+      "30": {
+        "key": "30",
+        "name": "segment_float_array",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "score",
+                "value": [
+                  "1.0",
+                  "2.0",
+                  "3.0",
+                  "4.0"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "segment_float_array"
+      }
+    ]
+  }
+}
