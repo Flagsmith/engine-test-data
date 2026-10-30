@@ -1,0 +1,41 @@
+{
+  // Given: A segment with a CONTAINS condition checking if score contains "9"
+  // When: An evaluation context with an identity that has score 95 (integer, not a string)
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "high_scorer",
+      "key": "key_high_scorer",
+      "traits": {
+        "score": 95
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "nine_scorers_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "CONTAINS",
+                "property": "score",
+                "value": "9"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}

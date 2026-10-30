@@ -1,0 +1,45 @@
+{
+  // Given: A segment with a GREATER_THAN condition checking if score > "90"
+  // When: An evaluation context with an identity that has score 95.5 (float, greater than threshold)
+  // Then: The context should be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "high_scorer",
+      "key": "key_high_scorer",
+      "traits": {
+        "score": 95.5
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "high_scorers_segment",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "GREATER_THAN",
+                "property": "score",
+                "value": "90"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": [
+      {
+        "name": "high_scorers_segment"
+      }
+    ]
+  }
+}
