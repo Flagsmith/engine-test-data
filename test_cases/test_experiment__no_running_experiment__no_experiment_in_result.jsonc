@@ -13,9 +13,9 @@
       "key": "exp_env_user_123"
     },
     "features": {
-      "banner": {
+      "checkout": {
         "key": "100",
-        "name": "banner",
+        "name": "checkout",
         "enabled": true,
         "value": "control",
         "metadata": {
@@ -26,9 +26,9 @@
   },
   "result": {
     "flags": {
-      "banner": {
+      "checkout": {
         "enabled": true,
-        "name": "banner",
+        "name": "checkout",
         "reason": "STATIC",
         "value": "control",
         "variant": null,

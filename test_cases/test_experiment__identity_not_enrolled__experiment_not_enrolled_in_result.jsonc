@@ -13,16 +13,16 @@
       "key": "exp_env_user_123"
     },
     "features": {
-      "banner": {
+      "checkout": {
         "key": "100",
-        "name": "banner",
+        "name": "checkout",
         "enabled": true,
         "value": "control",
         "metadata": {
           "id": 1,
           "experiment": {
             "id": 7,
-            "name": "banner experiment",
+            "name": "checkout experiment",
             "in_experiment": false
           }
         }
@@ -31,7 +31,7 @@
     "segments": {
       "42": {
         "key": "42",
-        "name": "banner experiment rollout",
+        "name": "checkout experiment rollout",
         "rules": [
           {
             "type": "ALL",
@@ -47,7 +47,7 @@
         "overrides": [
           {
             "key": "101",
-            "name": "banner",
+            "name": "checkout",
             "enabled": true,
             "value": "control",
             "priority": 0,
@@ -63,7 +63,7 @@
               "id": 1,
               "experiment": {
                 "id": 7,
-                "name": "banner experiment",
+                "name": "checkout experiment",
                 "in_experiment": true
               }
             }
@@ -74,9 +74,9 @@
   },
   "result": {
     "flags": {
-      "banner": {
+      "checkout": {
         "enabled": true,
-        "name": "banner",
+        "name": "checkout",
         "reason": "DEFAULT",
         "value": "control",
         "variant": null,
@@ -84,7 +84,7 @@
           "id": 1,
           "experiment": {
             "id": 7,
-            "name": "banner experiment",
+            "name": "checkout experiment",
             "in_experiment": false
           }
         }
