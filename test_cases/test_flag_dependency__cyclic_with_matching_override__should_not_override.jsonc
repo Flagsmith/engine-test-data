@@ -1,0 +1,97 @@
+{
+  // Given: A feature `a` overridden by two segments — `a_requires_a` is
+  //        conditioned on `a` itself, closing a cycle, and `everyone` matches
+  //        unconditionally
+  // When: The context is evaluated
+  // Then: `a` serves its environment default, reported as a circular
+  //       dependency, and only `everyone` matches
+  //
+  // NOTE: In the other cyclic cases, every override of a flag in a cycle is
+  //       guarded by the segment that closes it, so discarding that segment
+  //       leaves the default in place anyway. Here a segment outside the cycle
+  //       also overrides `a`. A flag in a cycle could not be resolved, so it
+  //       serves its environment default whichever other segments match;
+  //       relabelling the reason alone would serve `everyone`'s override as
+  //       a circular dependency.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "a": {
+        "key": "1",
+        "name": "a",
+        "enabled": false,
+        "value": "a_default"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "a_requires_a",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.flags.a.enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "1",
+            "name": "a",
+            "enabled": true,
+            "value": "a_cyclic_override"
+          }
+        ]
+      },
+      "2": {
+        "key": "2",
+        "name": "everyone",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "EQUAL",
+                "property": "$.environment.name",
+                "value": "Environment"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "1",
+            "name": "a",
+            "enabled": true,
+            "value": "a_everyone_override"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "a": {
+        "enabled": false,
+        "name": "a",
+        "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
+        "value": "a_default",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "everyone"
+      }
+    ]
+  }
+}
