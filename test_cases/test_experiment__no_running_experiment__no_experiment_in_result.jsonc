@@ -1,0 +1,42 @@
+// Given: A feature with no running experiment
+// When: An identity is evaluated
+// Then: The flag carries no experiment
+{
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "exp_env",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "user_123",
+      "key": "exp_env_user_123"
+    },
+    "features": {
+      "banner": {
+        "key": "100",
+        "name": "banner",
+        "enabled": true,
+        "value": "control",
+        "metadata": {
+          "id": 1
+        }
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "banner": {
+        "enabled": true,
+        "name": "banner",
+        "reason": "STATIC",
+        "value": "control",
+        "variant": null,
+        "metadata": {
+          "id": 1
+        }
+      }
+    },
+    "segments": []
+  }
+}

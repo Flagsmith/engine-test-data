@@ -1,0 +1,99 @@
+// Given: A feature in a running experiment, and an identity in its rollout segment
+// When: The identity is evaluated
+// Then: The flag carries the rollout override's experiment, enrolled, and its variant
+{
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "exp_env",
+      "name": "Production"
+    },
+    "identity": {
+      "identifier": "user_123",
+      "key": "exp_env_user_123"
+    },
+    "features": {
+      "banner": {
+        "key": "100",
+        "name": "banner",
+        "enabled": true,
+        "value": "control",
+        "metadata": {
+          "id": 1,
+          "experiment": {
+            "id": 7,
+            "name": "banner experiment",
+            "in_experiment": false
+          }
+        }
+      }
+    },
+    "segments": {
+      "42": {
+        "key": "42",
+        "name": "banner experiment rollout",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "property": "$.identity.key",
+                "operator": "PERCENTAGE_SPLIT",
+                "value": "100"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "key": "101",
+            "name": "banner",
+            "enabled": true,
+            "value": "control",
+            "priority": 0,
+            "variants": [
+              {
+                "key": "treatment",
+                "value": "hello treatment",
+                "weight": 100,
+                "priority": 1
+              }
+            ],
+            "metadata": {
+              "id": 1,
+              "experiment": {
+                "id": 7,
+                "name": "banner experiment",
+                "in_experiment": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "banner": {
+        "enabled": true,
+        "name": "banner",
+        "reason": "SPLIT; weight=100",
+        "value": "hello treatment",
+        "variant": "treatment",
+        "metadata": {
+          "id": 1,
+          "experiment": {
+            "id": 7,
+            "name": "banner experiment",
+            "in_experiment": true
+          }
+        }
+      }
+    },
+    "segments": [
+      {
+        "name": "banner experiment rollout"
+      }
+    ]
+  }
+}
