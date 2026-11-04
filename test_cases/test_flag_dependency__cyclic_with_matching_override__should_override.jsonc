@@ -3,16 +3,13 @@
   //        conditioned on `a` itself, closing a cycle, and `everyone` matches
   //        unconditionally
   // When: The context is evaluated
-  // Then: `a` serves its environment default, reported as a circular
+  // Then: `a` serves `everyone`'s override, reported as a circular
   //       dependency, and only `everyone` matches
   //
-  // NOTE: In the other cyclic cases, every override of a flag in a cycle is
-  //       guarded by the segment that closes it, so discarding that segment
-  //       leaves the default in place anyway. Here a segment outside the cycle
-  //       also overrides `a`. A flag in a cycle could not be resolved, so it
-  //       serves its environment default whichever other segments match;
-  //       relabelling the reason alone would serve `everyone`'s override as
-  //       a circular dependency.
+  // NOTE: Only the segment that closes the cycle is discarded; other segments
+  //       overriding the flag still apply. The error reason is what signals
+  //       that the flag could not be fully resolved, so its served state and
+  //       value carry no guarantee beyond the segments that did match.
   "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
   "context": {
     "environment": {
@@ -81,10 +78,10 @@
   "result": {
     "flags": {
       "a": {
-        "enabled": false,
+        "enabled": true,
         "name": "a",
         "reason": "ERROR; code=CIRCULAR_DEPENDENCY",
-        "value": "a_default",
+        "value": "a_everyone_override",
         "variant": null
       }
     },
