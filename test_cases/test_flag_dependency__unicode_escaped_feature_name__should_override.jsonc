@@ -1,0 +1,85 @@
+{
+  // Given: A feature `été`, and a segment overriding `dependent` whose only
+  //        condition is on `été` not being enabled, its name selector holding
+  //        `\u` escapes
+  // When: A context is evaluated in which `été` is disabled
+  // Then: The escapes resolve to `été`, so the dependency is not satisfied,
+  //       `dependent` takes the override, and the segment matches
+  //
+  // NOTE: Flagsmith writes a dependency's condition as
+  //       `$.flags[<json.dumps(name)>].enabled`, which escapes every non-ASCII
+  //       character, e.g. `$.flags["\u00e9t\u00e9"].enabled`. RFC 9535 allows
+  //       such escapes in name selectors. An implementation that looks up
+  //       `\u00e9t\u00e9` verbatim reads no value, so the segment never
+  //       matches and `dependent` keeps its default.
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "features": {
+      "été": {
+        "enabled": false,
+        "key": "1",
+        "name": "été",
+        "value": null
+      },
+      "dependent": {
+        "enabled": true,
+        "key": "2",
+        "name": "dependent",
+        "value": "on"
+      }
+    },
+    "segments": {
+      "1": {
+        "key": "1",
+        "name": "dependent-depends-on-été",
+        "rules": [
+          {
+            "type": "ANY",
+            "conditions": [
+              {
+                "operator": "NOT_EQUAL",
+                "property": "$.flags[\"\\u00e9t\\u00e9\"].enabled",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "overrides": [
+          {
+            "enabled": false,
+            "key": "2",
+            "name": "dependent",
+            "value": "off"
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {
+      "été": {
+        "enabled": false,
+        "name": "été",
+        "reason": "STATIC",
+        "value": null,
+        "variant": null
+      },
+      "dependent": {
+        "enabled": false,
+        "name": "dependent",
+        "reason": "TARGETING_MATCH; segment=dependent-depends-on-été",
+        "value": "off",
+        "variant": null
+      }
+    },
+    "segments": [
+      {
+        "name": "dependent-depends-on-été"
+      }
+    ]
+  }
+}
