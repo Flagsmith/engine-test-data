@@ -1,0 +1,41 @@
+{
+  // Given: A segment with IN condition using JSON-encoded array of integers
+  // When: An evaluation context with an identity that has a float trait that does not match any of the JSON-encoded integer values
+  // Then: The context should not be considered part of the segment
+  "$schema": "https://raw.githubusercontent.com/Flagsmith/engine-test-data/refs/tags/v2.0.0/schema.json",
+  "context": {
+    "environment": {
+      "key": "key",
+      "name": "Environment"
+    },
+    "identity": {
+      "identifier": "float_json_int_array_user",
+      "key": "key_float_json_int_array_user",
+      "traits": {
+        "score": 2.0
+      }
+    },
+    "segments": {
+      "40": {
+        "key": "40",
+        "name": "segment_float_json_encoded_int_mismatch",
+        "rules": [
+          {
+            "type": "ALL",
+            "conditions": [
+              {
+                "operator": "IN",
+                "property": "score",
+                "value": "[1,2,3,4]"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "flags": {},
+    "segments": []
+  }
+}
